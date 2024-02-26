@@ -27,3 +27,12 @@ print("sales tax: ${:.2f}".format(sales_tax))
 print("Total: ${:.2f}".format(total))
 print("-----------------------------------")
 print()
+
+#The payment amount and return the change value
+print("-----------------------------------")
+payment_amount = float(input("What is the payment amount? "))
+change = payment_amount - total
+print()
+print("Change: ${:.2f}".format(change))
+print("-----------------------------------")
+print()
