@@ -1,4 +1,4 @@
-# Milestone Activity: Adventure Game
+# Milestone Activity: Adventure Game.
 
 # by Victor dos Santos
 
