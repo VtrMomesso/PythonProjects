@@ -1,4 +1,4 @@
-#Meal Price Calculator Project Week2, Python.
+#Meal Price Calculator Project, Python.
 
 #By Victor dos Santos
 
