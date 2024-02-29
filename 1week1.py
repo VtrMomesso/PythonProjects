@@ -1,4 +1,4 @@
-# mad libs project Week1, Python. 
+# mad libs project, Python. 
 
 # by Victor dos Santos
 
