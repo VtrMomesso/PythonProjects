@@ -21,11 +21,13 @@ day_week_number = now_date.weekday()
 days_week_names = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
 # Asking the Subtotal to the costumer.
+print()
 subtotal = float(input("Please enter the subtotal: "))
 
 # Calculating the sales tax in 6%  
 sales_tax_amount = (subtotal / 100) * 6
 
+# Calculating the discount
 discount = (subtotal / 100) * 10
 
 # Calculating the total
@@ -33,16 +35,16 @@ total = sales_tax_amount + subtotal
 
 
 # If Else Case: 
-if days_week_names == [1, 2]:
-    print("There are discount")
-
+if subtotal >= 50 and (day_week_number == 1 or day_week_number == 2):
+    total = total - discount
     
+    print("Sales tax: ${:.2f}".format(sales_tax_amount))
+    print("Discount: -${:.2f}".format(discount))
+    print("Total: ${:.2f}".format(total))
+    print(f"Today is {days_week_names[day_week_number]}, and there is a discount of 10%.")
+    print()
 
-
-print("Sales tax: ${:.2f}".format(sales_tax_amount))
-print("Discount: ${:.2f}".format(discount))
-print("Total: ${:.2f}".format(total))
-
-print()
-print(f'Today is {days_week_names[1]}.')
-print()
+else:
+    print("Sales tax: ${:.2f}".format(sales_tax_amount))
+    print("Total: ${:.2f}".format(total))
+    print()
