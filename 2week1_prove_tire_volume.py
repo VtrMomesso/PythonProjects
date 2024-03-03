@@ -36,23 +36,27 @@ with open(volume_file, 'a') as file:
     print()
     print(f"The informations was save on the file '{volume_file}'")
 
-
+# Open the file again and bring back the informations from the last line with the mode ('r')
     with open(volume_file, 'r') as file:
+        # Read the lines from the file 
         lines = file.readlines()
-
+        # Organize the file's informations
         current_datetime = datetime.now().strftime('%y-%m-%d')
         width = int(width)
         aspect_ratio = int(aspect_ratio)
         diameter = int(diameter)
         volume = float(volume)
         
+        # See all the content and look in the last two lines
         if len(lines) >= 2:
             
+            #call the last two lines and divided them
             last_line = lines[-2].strip().split()
             penult_line = lines[-1].strip().split()
 
+            # Print the end of the code as were riquired
             if len(last_line) >= 5 and len(penult_line) >= 5:
-            # Imprime as últimas duas linhas formatadas com duas casas decimais
+
                 print()
                 print(f"This is the last line: {current_datetime},"+ " {}, {}, {}, {:.2f}.".format(width, aspect_ratio, diameter, volume))
                 print()
