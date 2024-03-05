@@ -92,3 +92,11 @@ while True:
         # Print that the Item was deleted
         print("Item removed ")
         # After this information, come back to menu.
+
+
+    # The Fourth option show us the sum of the total 
+    elif option == "4":
+        # The print bring to the user the results.
+        # The format show us what informations will be printed
+        # The sum make the calculations with all the items in the price list
+        print("The total is: ${:.2f}".format(sum(price_list)))
