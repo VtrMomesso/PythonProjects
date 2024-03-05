@@ -109,4 +109,10 @@ while True:
         print()
         # Stop the program and close it.
         break;
-    
+
+    #   The Last option is if the user type some wrong number will
+    # print in the else statment try it again 
+    else:
+        print("There isn't this option. Try it again.")
+
+    # It will retun to the menu again.
