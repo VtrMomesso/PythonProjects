@@ -65,3 +65,30 @@ while True:
             price = price_list[i]
             # Print the requested informations.
             print(f"{index}. {products} ${price:.2f}")
+
+    # The Third option bring back to the user the cart list and ask wich item the user wants to delete.
+    elif option == "3":
+        # For Loop bring the list back with all the values that was saved.
+        for i in range(len(products_list)):
+            # Realize all the privious process:
+            #  Especifid the index and add one more, each time this 
+            # loop run it brings the following result and save in 
+            # the products' and prices' list. 
+            index = i + 1
+            products = products_list[i]
+            price = price_list[i]
+            print(f"{index}. {products} ${price:.2f}")
+
+        # The item is deleted with the pop() code.
+        # Asking the user what information they wants to delete and sabe in the removing_item variable
+        removing_item = int(input("Which item would you like to remove? (Please type a number): "))
+        # Make a calculation deleting the Item which was selected by the user
+        delete = removing_item - 1
+        # The item was deleted by the products_list using the pop() code.
+        products_list.pop(delete)
+        # The item was deleted by the price_list using the pop() code.
+        price_list.pop(delete)
+
+        # Print that the Item was deleted
+        print("Item removed ")
+        # After this information, come back to menu.
