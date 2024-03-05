@@ -28,3 +28,8 @@ while True:
     print("|         5. Quit                   |" )
     print("+-----------------------------------+" )
     print()
+
+    option = input("Select an option: ")
+    print()
+
+    
