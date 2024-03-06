@@ -116,3 +116,5 @@ while True:
         print("There isn't this option. Try it again.")
 
     # It will retun to the menu again.
+    # thanks.    
+    # Copyright 2024 Victor dos Santos
