@@ -50,9 +50,22 @@ with open("life-expectancy.csv", 'r') as file_csv:
             entity_min = entity
             year_min = year
 
-        # Update the expectancy of life by year dictionary 
+        # Update the life's expectancy by year dictionary 
         if year in expectancy_by_year:
             # Fill the variable using the .append 
             expectancy_by_year[year].append(expectancy)
         else:
             expectancy_by_year[year] = [expectancy]
+
+
+# Require a interest year from the user.
+year_interest = int(input("Type an interest year: "))
+
+# Calculating the maximum and minimum life's expectancy by interest year
+expectancy_year_interest = expectancy_by_year.get(year_interest, [])
+if expectancy_year_interest:
+    maximum_year_interest = max(expectancy_year_interest)
+    minimum_year_interest = min(expectancy_year_interest)
+else:
+    maximum_year_interest = None
+    minimum_year_interest = None
