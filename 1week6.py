@@ -19,8 +19,20 @@ with open("life-expectancy.csv", 'r') as file_csv:
     # Ignore the first line (the header)
     next(reader_csv)
 
-    # Variables to keep the maximum and minimum values
+    # Variables to keep the maximum and minimum values.
     global_maximum = None
     global_minimum = None
 
+    # Create a dictionary to keep the values lifespan by year.
+    expectancy_by_year = {}
     
+
+    # Begin with for loop.
+    for line in reader_csv:
+
+        # Divided the information in 4 variables.
+        entity, code, year, expectancy = line
+        
+        # Define the variable kind
+        year = int(year)
+        expectancy = float(expectancy)
