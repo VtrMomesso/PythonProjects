@@ -69,3 +69,7 @@ if expectancy_year_interest:
 else:
     maximum_year_interest = None
     minimum_year_interest = None
+
+# Show the results
+print("\nThe maximum global life's expectancy is: {:.2f} on {} in the Year {}".format(global_maximum, entity_max, year_max))
+print("The minimum global life's expectancy is: {:.2f} on {} in the Year {}".format(global_minimum, entity_min, year_min))
