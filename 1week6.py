@@ -50,4 +50,9 @@ with open("life-expectancy.csv", 'r') as file_csv:
             entity_min = entity
             year_min = year
 
-        
+        # Update the expectancy of life by year dictionary 
+        if year in expectancy_by_year:
+            # Fill the variable using the .append 
+            expectancy_by_year[year].append(expectancy)
+        else:
+            expectancy_by_year[year] = [expectancy]
