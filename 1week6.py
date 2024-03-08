@@ -4,7 +4,9 @@
 
 """ The objective is to open the life-expectancy.csv and compute
 the right information and show the maximum life expectancy, minimum
-the avarange lifespan and all this in the especific year. """
+the avarange lifespan and all this in the especific year. 
+
+Monaco will be apear on both ocasion as a riqueriment to compleat a goal"""
 
 
 # This open the door to bring the document that we will use.
@@ -73,3 +75,12 @@ else:
 # Show the results
 print("\nThe maximum global life's expectancy is: {:.2f} on {} in the Year {}".format(global_maximum, entity_max, year_max))
 print("The minimum global life's expectancy is: {:.2f} on {} in the Year {}".format(global_minimum, entity_min, year_min))
+
+
+if maximum_year_interest is not None and minimum_year_interest is not None:
+    print("\nFor the year {}: ".format(year_interest))
+    print("The average life expectancy across all countries was: {:.3f}".format(sum(expectancy_year_interest) / len(expectancy_year_interest)))
+    print("The maximum life expectancy was: {:.3f}".format(maximum_year_interest))
+    print("The minimum life expectancy was: {:.3f}".format(minimum_year_interest))
+else:
+    print("\nThere is not data avaliabe to the following year {}".format(year_interest))
