@@ -3,7 +3,8 @@ Project 07: Windchill Calculator
 
 Author: Victor Dos Santos
 
-
+This Python program takes the temperatura and wind speed
+converting, calculating and so on, and show us the results
 """
 
 
