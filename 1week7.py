@@ -43,3 +43,7 @@ def main():
     # If a typing error happen.
     except ValueError:
         print("Invalid input. Please enter a valid temperature.")
+
+# This If statment verify and run the main code.
+if __name__ == "__main__":
+    main()
