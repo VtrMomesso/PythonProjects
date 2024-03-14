@@ -183,7 +183,7 @@ def get_verb(quantity, tense):
         verbs = random.choice(future_verbs)
         return verbs
     
-    
+    # Randomly choose and return a verb.
     verb = random.choice(verbs)
     return verb
 
@@ -206,6 +206,7 @@ def get_preposition():
         "off", "on", "onto", "out", "over",
         "past", "to", "under", "with", "without"]
     
+    # Randomly choose and return a preposition.
     preposition = random.choice(prepositions)
     return preposition
 
@@ -217,9 +218,9 @@ def get_preposition_phrase(quantity):
 
     Parameter
         quantity: an interger that determines if the
-        determiner and noun in the prepositional 
-        phrase returned from this function should 
-        be single or plural.
+            determiner and noun in the prepositional 
+            phrase returned from this function should 
+            be single or plural.
     Return: a prepositional phrase.
     """
 
@@ -227,9 +228,10 @@ def get_preposition_phrase(quantity):
     word = get_determiner(quantity)
     noun = get_noun(quantity)
 
+    # Randomly choose and return a prepositional phrase.
     preposition_phrase = f"{preposition} {word} {noun}"
     return preposition_phrase
 
-
+# to bring us back to the main function
 if __name__ == "__main__":
     main()
