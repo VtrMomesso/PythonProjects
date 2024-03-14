@@ -44,7 +44,25 @@ def main():
 
 
 def make_sentence(quantity, tense):
-    
+    """Return the following functions get_determiner, get_noun,
+    get_verb and get_preposition_phrase. This function bring two
+    parameters too, quantity and tense. This help in the creation
+    of the sentences further.
+
+    Parameter
+        Variables: word, noun, verb, preposition_phrase.
+            It function takes the previous functions and 
+            fill the variables with a right quantity or 
+            tense, depending on the parameters that will
+            be passed in the main function. 
+        Quantity: an integer.
+            The quantity will be call here to come back 
+            to main function.
+        Tense: past, present, future.
+            There are need to call this parameter, to 
+            call this on the main function later.
+    Return: a phrase with all these variables and capitalize word.
+    """
     word = get_determiner(quantity)
     noun = get_noun(quantity)
     verb = get_verb(quantity, tense)
@@ -103,6 +121,7 @@ def get_noun(quantity):
         nouns = ["birds", "boys", "cars", "cats", "children",
         "dogs", "girls", "men", "rabbits", "women"]
 
+    # Randomly choose and return a noun.
     noun = random.choice(nouns)
     return noun
 
