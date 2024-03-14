@@ -9,20 +9,20 @@ import random
 
 
 def main():
-    for _ in range(1):
-        sentence_singular_past = make_sentence(1, "past")
-        sentence_singular_present = make_sentence(1, "present")
-        sentence_singular_future = make_sentence(1, "future")
-        sentence_plural_past = make_sentence(2, "past")
-        sentence_plural_present = make_sentence(2, "present")
-        sentence_plural_future = make_sentence(2, "future")
+   
+    sentence_singular_past = make_sentence(1, "past")
+    sentence_singular_present = make_sentence(1, "present")
+    sentence_singular_future = make_sentence(1, "future")
+    sentence_plural_past = make_sentence(2, "past")
+    sentence_plural_present = make_sentence(2, "present")
+    sentence_plural_future = make_sentence(2, "future")
 
-        print(sentence_singular_past)
-        print(sentence_singular_present)
-        print(sentence_singular_future)
-        print(sentence_plural_past)
-        print(sentence_plural_present)
-        print(sentence_plural_future)
+    print(sentence_singular_past)
+    print(sentence_singular_present)
+    print(sentence_singular_future)
+    print(sentence_plural_past)
+    print(sentence_plural_present)
+    print(sentence_plural_future)
 
 
 def make_sentence(quantity, tense):
@@ -30,8 +30,9 @@ def make_sentence(quantity, tense):
     word = get_determiner(quantity)
     noun = get_noun(quantity)
     verb = get_verb(quantity, tense)
+    preposition_phrase = get_preposition_phrase(quantity)
 
-    return f"{word} {noun} {verb}"
+    return f"{word.capitalize()} {noun} {verb} {preposition_phrase}"
 
 
 
@@ -179,9 +180,13 @@ def get_preposition_phrase(quantity):
         be single or plural.
     Return: a prepositional phrase.
     """
-    
 
+    preposition = get_preposition()
+    word = get_determiner(quantity)
+    noun = get_noun(quantity)
 
+    preposition_phrase = f"{preposition} {word} {noun}"
+    return preposition_phrase
 
 
 if __name__ == "__main__":
