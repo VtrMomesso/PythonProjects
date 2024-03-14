@@ -1,6 +1,24 @@
 # Sentences 
 
-"""This program brings some sentences"""
+"""This program brings some sentences.
+The main point is how to work with functions during this project.
+
+    Now we will have the simple semantic of the code.
+
+1. The computer starts executing the sentences.py program by calling
+the main function.
+2. While executing the main function, the computer calls the 
+make_sentence function.
+3. While executing the make_sentence function, the computer calls the
+get_determiner, get_noun, get_verb, and get_prepositional_phrase
+functions.
+4. While executing the get_prepositional_phrase function, the computer
+calls the get_preposition, get_determiner, and get_noun functions.
+5. While executing each of the get_determiner, get_noun, get_verb, 
+and get_preposition functions, the computer calls the random.choice function.
+6. Then, the computer executes the str.capitalize method.
+7. Finally, the computer executes the print function.
+"""
 
 # By Victor dos Santos
 
