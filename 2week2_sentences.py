@@ -114,10 +114,15 @@ def get_verb(quantity, tense):
             either "past", "present" or "future".
     Return: a randomly chosen verb.
     """
-    past_verbs = ["drank", "ate", "grew", "laughed", "thought", "ran", "slept", "talked", "walked", "wrote"]
-    present_singular_verbs = ["drinks", "eats", "grows", "laughs", "thinks", "runs", "sleeps", "talks", "walks", "writes"]
-    present_plural_verbs = ["drink", "eat", "grow", "laugh", "think", "run", "sleep", "talk", "walk", "write"]
-    future_verbs = ["will drink", "will eat", "will grow", "will laugh", "will think", "will run", "will sleep", "will talk", "will walk", "will write"]
+    past_verbs = ["drank", "ate", "grew", "laughed", "thought",
+        "ran", "slept", "talked", "walked", "wrote"]
+    present_singular_verbs = ["drinks", "eats", "grows", "laughs", "thinks",
+        "runs", "sleeps", "talks", "walks", "writes"]
+    present_plural_verbs = ["drink", "eat", "grow", "laugh", "think",
+        "run", "sleep", "talk", "walk", "write"]
+    future_verbs = ["will drink", "will eat", "will grow", "will laugh",
+        "will think", "will run", "will sleep", "will talk",
+        "will walk", "will write"]
 
     if tense == "past":
         verbs = random.choice(past_verbs)
