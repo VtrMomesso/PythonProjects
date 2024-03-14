@@ -9,17 +9,36 @@ import random
 
 
 def main():
-    for _ in range(5):
-        sentence = make_sentence()
-        print(sentence)
+    for _ in range(1):
+        sentence_singular_past = make_sentence(1, "past")
+        sentence_singular_present = make_sentence(1, "present")
+        sentence_singular_future = make_sentence(1, "future")
+        sentence_plural_past = make_sentence(2, "past")
+        sentence_plural_present = make_sentence(2, "present")
+        sentence_plural_future = make_sentence(2, "future")
+
+        print(sentence_singular_past)
+        print(sentence_singular_present)
+        print(sentence_singular_future)
+        print(sentence_plural_past)
+        print(sentence_plural_present)
+        print(sentence_plural_future)
 
 
-def make_sentence():
+def make_sentence(quantity, tense):
     
-    word = get_determiner()
-    noun = get_noun()
-    verb = get_verb()
-    return f"{word} {noun} {verb}."
+    word = get_determiner(quantity)
+    noun = get_noun(quantity)
+    verb = get_verb(quantity, tense)
+
+    a = get_determiner(1), get_noun(1), get_verb(1, "past")
+    b = get_determiner(1), get_noun(1), get_verb(1, "present")
+    c = get_determiner(1), get_noun(1), get_verb(1, "future")
+    d = get_determiner(2), get_noun(2), get_verb(2, "past")
+    e = get_determiner(2), get_noun(2), get_verb(2, "present")
+    f = get_determiner(2), get_noun(2), get_verb(2, "future")
+
+    return f"{word} {noun} {verb}"
 
 def get_determiner(quantity):
     """Return a randomly chosen determiner. A determiner is
@@ -42,8 +61,8 @@ def get_determiner(quantity):
         words = ["some", "many", "the"]
 
     # Randomly choose and return a determiner.
-    word = random.choice(words)
-    return word
+    determiner = random.choice(words)
+    return determiner
 
 def get_noun(quantity):
     """Return a randomly chosen noun.
@@ -98,22 +117,32 @@ def get_verb(quantity, tense):
             either "past", "present" or "future".
     Return: a randomly chosen verb.
     """
+    past_verbs = ["drank", "ate", "grew", "laughed", "thought", "ran", "slept", "talked", "walked", "wrote"]
+    present_singular_verbs = ["drinks", "eats", "grows", "laughs", "thinks", "runs", "sleeps", "talks", "walks", "writes"]
+    present_plural_verbs = ["drink", "eat", "grow", "laugh", "think", "run", "sleep", "talk", "walk", "write"]
+    future_verbs = ["will drink", "will eat", "will grow", "will laugh", "will think", "will run", "will sleep", "will talk", "will walk", "will write"]
 
     if tense == "past":
-        verbs = ["drank", "ate", "grew", "laughed", "thought",
-        "ran", "slept", "talked", "walked", "wrote"]
-
-    elif quantity == 1:
-        verbs = ["drinks", "eats", "grows", "laughs", "thinks",
-        "runs", "sleeps", "talks", "walks", "writes"]
-
-    elif quantity != 1:
-        verbs = ["drink", "eat", "grow", "laugh", "think",
-        "run", "sleep", "talk", "walk", "write"]
+        verbs = random.choice(past_verbs)
+        return verbs
     
+    elif tense == "present":
+        if quantity == 1:
+            verbs = random.choice(present_singular_verbs)
+            return verbs
+
+        else:
+            verbs = random.choice(present_plural_verbs)
+            return verbs
+        
     elif tense == "future":
-        verbs = ["will drink", "will eat", "will grow", "will laugh",
-        "will think", "will run", "will sleep", "will talk",
-        "will walk", "will write"]
+        verbs = random.choice(future_verbs)
+        return verbs
     
     verb = random.choice(verbs)
+    return verb
+
+
+
+if __name__ == "__main__":
+    main()
