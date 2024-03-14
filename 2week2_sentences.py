@@ -162,6 +162,10 @@ def get_verb(quantity, tense):
         "will think", "will run", "will sleep", "will talk",
         "will walk", "will write"]
 
+    """Conditional working to find the kind of the sentences
+    if it will be a "past sentence", "presente singular sentence",
+    "presente plural sentence" or a "future sentence".
+    """
     if tense == "past":
         verbs = random.choice(past_verbs)
         return verbs
@@ -178,6 +182,7 @@ def get_verb(quantity, tense):
     elif tense == "future":
         verbs = random.choice(future_verbs)
         return verbs
+    
     
     verb = random.choice(verbs)
     return verb
