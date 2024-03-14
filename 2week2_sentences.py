@@ -31,14 +31,9 @@ def make_sentence(quantity, tense):
     noun = get_noun(quantity)
     verb = get_verb(quantity, tense)
 
-    a = get_determiner(1), get_noun(1), get_verb(1, "past")
-    b = get_determiner(1), get_noun(1), get_verb(1, "present")
-    c = get_determiner(1), get_noun(1), get_verb(1, "future")
-    d = get_determiner(2), get_noun(2), get_verb(2, "past")
-    e = get_determiner(2), get_noun(2), get_verb(2, "present")
-    f = get_determiner(2), get_noun(2), get_verb(2, "future")
-
     return f"{word} {noun} {verb}"
+
+
 
 def get_determiner(quantity):
     """Return a randomly chosen determiner. A determiner is
@@ -63,6 +58,7 @@ def get_determiner(quantity):
     # Randomly choose and return a determiner.
     determiner = random.choice(words)
     return determiner
+
 
 def get_noun(quantity):
     """Return a randomly chosen noun.
@@ -90,6 +86,7 @@ def get_noun(quantity):
 
     noun = random.choice(nouns)
     return noun
+
 
 def get_verb(quantity, tense):
     """Return a randomly chosen verb. If tense is "past",
