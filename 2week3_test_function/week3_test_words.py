@@ -23,3 +23,4 @@ def test_prefix():
     assert prefix("", "correct") == ""
     assert prefix("clear", "") == ""
     assert prefix("happy", "funny") == ""
+    assert prefix("cat", "catalog") == "dog"
