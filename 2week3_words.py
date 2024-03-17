@@ -57,3 +57,12 @@ def suffix(string1, string2):
     # Start at the end of both strings.
     i1 = len(string1) - 1
     i2 = len(string2) - 1
+
+     # Repeat until the computer finds two
+    # characters that are not the same.
+    limit = min(len(string1), len(string2))
+    for _ in range(limit):
+        if string1[i1] != string2[i2]:
+            break
+        i1 -= 1
+        i2 -= 1
