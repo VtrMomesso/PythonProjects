@@ -27,3 +27,4 @@ def test_prefix():
     assert prefix("dogmatic", "dog") == "dog"
     assert prefix("jump", "joyous") == "j"
     assert prefix("upbeat", "upgrade") == "up"
+    assert prefix("Disable", "dIstasteful") == "dis"
