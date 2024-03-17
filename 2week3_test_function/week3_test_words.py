@@ -59,6 +59,8 @@ def test_suffix():
     assert suffix("", "correct") == ""
     assert suffix("clear", "") == ""
     assert suffix("angelic", "awesome") == ""
+    assert suffix("found", "profound") == "found"
+    assert suffix("ditch", "itch") == "itch"
 
 
 # Call the main function that is part of pytest so that the
