@@ -38,7 +38,7 @@ def prefix(string1, string2):
     
 
 def suffix(string1, string2):
-     """Return the suffix, if any, that appears in both string1 and
+    """Return the suffix, if any, that appears in both string1 and
     string2. In other words, return a string of the characters
     that appear at the end of both string1 and string2. For
     example, if string1 is "hilarious" and string2 is "nefarious",
@@ -49,7 +49,11 @@ def suffix(string1, string2):
         string2: another string of text
     Return: a string
     """
-     
+
     # Convert both strings to lower case.
     string1 = string1.lower()
     string2 = string2.lower()
+
+    # Start at the end of both strings.
+    i1 = len(string1) - 1
+    i2 = len(string2) - 1
