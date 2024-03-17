@@ -24,6 +24,7 @@ import pytest
 
 def test_prefix():
     """Verify that the prefix function works correctly.
+
     Parameters: none
     Return: nothing
     """
@@ -45,6 +46,14 @@ def test_prefix():
     assert prefix("jump", "joyous") == "j"
     assert prefix("upbeat", "upgrade") == "up"
     assert prefix("Disable", "dIstasteful") == "dis"
+
+
+def test_suffix():
+    """Verify that the suffix function works correctly.
+    
+    Parameters: none
+    Return: nothing
+    """
 
 
 # Call the main function that is part of pytest so that the
