@@ -28,3 +28,8 @@ def test_prefix():
     assert prefix("jump", "joyous") == "j"
     assert prefix("upbeat", "upgrade") == "up"
     assert prefix("Disable", "dIstasteful") == "dis"
+
+
+# Call the main function that is part of pytest so that the
+# computer will execute the test functions in this file.
+pytest.main(["-v", "--tb=line", "-rN", __file__])
