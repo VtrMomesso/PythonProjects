@@ -31,3 +31,9 @@ def prefix(string1, string2):
         if string1[i] != string2[i]:
             break
         i += 1
+
+    # Extract a substring from string1 and return it
+    pre = string1[0 : i]
+    return pre
+    
+    
