@@ -50,10 +50,15 @@ def test_prefix():
 
 def test_suffix():
     """Verify that the suffix function works correctly.
-    
+
     Parameters: none
     Return: nothing
     """
+    # Call the suffix function and verify that.
+    assert suffix("", "") == ""
+    assert suffix("", "correct") == ""
+    assert suffix("clear", "") == ""
+    assert suffix("angelic", "awesome") == ""
 
 
 # Call the main function that is part of pytest so that the
