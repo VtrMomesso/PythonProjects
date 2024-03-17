@@ -1,5 +1,22 @@
 """Verify that the prefix and suffix functions work correctly."""
 
+""" 
+
+    By Victor Dos Santos
+
+    
+    This code will work as a compliment from the week3_words.py,
+    you can find this inthe folder 2week3_test_function. This code
+    will run by after install some dependencies as the following:
+
+    python -m pip install --user --upgrade pip setuptools wheel
+
+    python -m pip install --user pytest
+
+    This will work on windows, to other operational sistem 
+    make a deep search.
+"""
+
 from week3_words import prefix, suffix
 import pytest
 
