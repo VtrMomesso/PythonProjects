@@ -24,4 +24,10 @@ def prefix(string1, string2):
     # Start at the beginning of both strings.
     i = 0
 
-    
+    # Repeat until the computer finds tow
+    # character that are not the same.
+    limit = min(len(string1), len(string2))
+    while i < limit:
+        if string1[i] != string2[i]:
+            break
+        i += 1
