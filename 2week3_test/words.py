@@ -17,4 +17,11 @@ def prefix(string1, string2):
     Return: a string
     """
 
+    # Convert both strings to lower case.
+    string1 = string1.lower()
+    string2 = string2.lower()
+
+    # Start at the beginning of both strings.
+    i = 0
+
     
