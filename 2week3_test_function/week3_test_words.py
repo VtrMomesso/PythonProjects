@@ -6,7 +6,10 @@ import pytest
 
 
 def test_prefix():
-      """Verify that the prefix function works correctly.
+    """Verify that the prefix function works correctly.
     Parameters: none
     Return: nothing
     """
+    # Call the prefix function and verify that it returns a string.
+    pre = prefix("upbeat", "upgrade")
+    assert isinstance(pre, str), "prefix function must return a string"
