@@ -1,7 +1,23 @@
+"""
+Copyrights 2024 - By Victor dos Santos - BYU-I
+
+    This is a test program that test the water_flow.py file.
+    There are three functions that will be verified as the
+    following:
+
+    # water_column_height
+
+    # pressure_gain_from_water_height
+
+    # pressure_loss_from_pipe 
+"""
+
 
 from water_flow import water_column_height, pressure_gain_from_water_height 
 from pytest import approx
 import pytest
+
+
 
 def test_water_column_height():
     column_height = water_column_height(0.0, 0.0)
