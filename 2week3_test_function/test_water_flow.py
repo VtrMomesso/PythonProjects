@@ -18,7 +18,6 @@ from pytest import approx
 import pytest
 
 
-
 def test_water_column_height():
     column_height = water_column_height(0.0, 0.0)
     assert column_height == approx(0.0)
