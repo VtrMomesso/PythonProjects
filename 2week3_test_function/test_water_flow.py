@@ -19,9 +19,9 @@ def test_water_column_height():
 
 def test_pressure_gain_from_water_height():
 
-    assert pressure_gain_from_water_height(0) == approx(0.001)
-    assert pressure_gain_from_water_height(0) == approx(0.001)
-    assert pressure_gain_from_water_height(0) == approx(0.001)
-    
+    assert pressure_gain_from_water_height(0) == approx(0.00)
+    assert pressure_gain_from_water_height(30.2) == approx(295.628)
+    assert pressure_gain_from_water_height(50.0) == approx(489.450)
+
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
