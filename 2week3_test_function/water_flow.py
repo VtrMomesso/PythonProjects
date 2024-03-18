@@ -13,5 +13,5 @@ def water_column_height(tower_height, tank_height):
     Return: column_height
     """
     column_height = tower_height + ((3 * tank_height) / 4)
-    column_height = round(column_height)
+    
     return column_height
