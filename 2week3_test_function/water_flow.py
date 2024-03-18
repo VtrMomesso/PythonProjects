@@ -37,4 +37,11 @@ def pressure_gain_from_water_height(height):
         h is the height of the water column in meters
     
     Parameters:
-        height: """
+        height: is a float number.
+        p: #
+        g: #
+    Return: presure
+    """
+
+    presure =  (998.2 * 9.80665 * height) / 1000
+    return presure
