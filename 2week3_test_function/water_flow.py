@@ -69,6 +69,6 @@ def pressure_loss_from_pipe(pipe_diameter,
         fluid_velocity: is a float value
     Return: pressure
 """
-    pressure = (-friction_factor * pipe_length * 998.2 (fluid_velocity * fluid_velocity)) / (2000 * pipe_diameter)
+    pressure = ((-friction_factor * pipe_length) * 998.2) * (fluid_velocity * fluid_velocity) / (2000 * pipe_diameter)
 
     return pressure
