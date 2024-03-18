@@ -46,4 +46,5 @@ def test_pressure_loss_from_pipe():
     assert pressure_loss_from_pipe(0.048692, 0.00, 0.018, 1.75) == approx(0.00)
     assert pressure_loss_from_pipe(0.048692, 0.00, 0.018, 1.75) == approx(0.00)
     assert pressure_loss_from_pipe(0.048692, 0.00, 0.018, 1.75) == approx(0.00)
+    assert pressure_loss_from_pipe(0.048692, 0.00, 0.018, 1.75) == approx(0.00)
 pytest.main(["-v", "--tb=line", "-rN", __file__])
