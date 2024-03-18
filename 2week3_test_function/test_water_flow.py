@@ -42,7 +42,7 @@ def test_pressure_gain_from_water_height():
 def test_pressure_loss_from_pipe():
 
     assert pressure_loss_from_pipe(0.048692, 0.00, 0.018, 1.75) == approx(0.00)
-    assert pressure_loss_from_pipe(0.048692, 0.00, 0.018, 1.75) == approx(0.00)
+    assert pressure_loss_from_pipe(0.048692, 200.00, 0.00, 1.75) == approx(0.00)
     assert pressure_loss_from_pipe(0.048692, 0.00, 0.018, 1.75) == approx(0.00)
     assert pressure_loss_from_pipe(0.048692, 0.00, 0.018, 1.75) == approx(0.00)
     assert pressure_loss_from_pipe(0.048692, 0.00, 0.018, 1.75) == approx(0.00)
