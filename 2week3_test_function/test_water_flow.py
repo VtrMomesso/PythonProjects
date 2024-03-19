@@ -18,8 +18,6 @@ from pytest import approx
 import pytest
 import math
 
-#This variable helps on the test statments, and brings a tolerance by error
-tolerance = 0.001
 
 def test_water_column_height():
     """Verify that the water_column_height function works correctly.
@@ -67,6 +65,9 @@ def test_pressure_loss_from_pipe():
     Return: nothing
     """
 
+    #This variable helps on the test statments, and brings a tolerance by error
+    tolerance = 0.001
+
     # The if statiment helps we find the condition where the code will work.
     if abs(0) < tolerance:
 
@@ -87,13 +88,17 @@ def test_pressure_loss_from_fittings():
         quantity_fittings.
     Return: nothing
     """
+
+    #This variable helps on the test statments, and brings a tolerance by error
+    tolerance = 0.001
+
     if abs(0) < tolerance:
 
         assert pressure_loss_from_fittings(0.00, 3) == approx(0.000, abs=tolerance)
         assert pressure_loss_from_fittings(1.65, 0) == approx(0.00, abs=tolerance)
         assert pressure_loss_from_fittings(1.65, 2) == approx(-0.109, abs=tolerance)
         assert pressure_loss_from_fittings(1.75, 2) == approx(-0.122, abs=tolerance)
-        
+        assert pressure_loss_from_fittings(1.75, 5) == approx(-0.306, abs=tolerance)
 
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
