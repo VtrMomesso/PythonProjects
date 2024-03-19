@@ -20,6 +20,13 @@ import math
 
 
 def test_water_column_height():
+    """Verify that the water_column_height function works correctly.
+
+    Parameters: 
+        tower_height, tank_height
+    Return: nothing
+    """
+
     column_height = water_column_height(0.0, 0.0)
     assert column_height == approx(0.0)
 
