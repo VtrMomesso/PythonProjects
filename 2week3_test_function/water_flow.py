@@ -92,6 +92,6 @@ def pressure_loss_from_fittings(
     Return: 
         pressure_loss
     """
-    pressure_loss = (-0.04 * 998.2 (fluid_velocity * fluid_velocity) * quantity_fittings) / 2000
-
+    pressure_loss = ((-0.04 * 998.2 * (fluid_velocity * fluid_velocity) * quantity_fittings) / 2000)
+    
     return pressure_loss
