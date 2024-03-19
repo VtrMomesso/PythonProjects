@@ -1,4 +1,11 @@
+# Copyrights 2024 - By Victor dos Santos 
 
+# Functions Program
+
+"""This Program contain the right riqueriments to compleate the following:
+An engineer must choose the tower height, pipe type, pipe diameter, and 
+pipe path. Engineers use software to help them make these choices and 
+design a working water distribtuion system."""
 
 
 def water_column_height(tower_height, tank_height):
@@ -151,6 +158,7 @@ def pressure_loss_from_pipe_reduction(larger_diameter,
 
     pressure_kilopascals = ((-K * 998.2) * (fluid_velocity ** 2)) / 2000
     return pressure_kilopascals
+
 
 PVC_SCHED80_INNER_DIAMETER = 0.28687 # (meters)  11.294 inches
 PVC_SCHED80_FRICTION_FACTOR = 0.013  # (unitless)
