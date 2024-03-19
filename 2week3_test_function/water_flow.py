@@ -186,3 +186,4 @@ def main():
 
     diameter = HDPE_SDR11_INNER_DIAMETER
     friction = HDPE_SDR11_FRICTION_FACTOR
+    velocity = HOUSEHOLD_VELOCITY
