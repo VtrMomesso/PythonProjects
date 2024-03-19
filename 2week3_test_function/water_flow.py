@@ -167,3 +167,5 @@ def main():
     quantity_angles = int(input("Number of 90° angles in supply pipe: "))
     length2 = float(input("Length of pipe from supply to house (meters): "))
 
+    water_height = water_column_height(tower_height, tank_height)
+    pressure = pressure_gain_from_water_height(water_height)
