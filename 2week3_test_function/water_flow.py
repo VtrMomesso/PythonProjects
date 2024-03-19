@@ -125,6 +125,26 @@ def pressure_loss_from_pipe_reduction(larger_diameter,
     """this function calculates the water pressure lost because of water 
     moving from a pipe with a large diameter into a pipe with 
     a smaller diameter. The calculations is made as the 
-    following formula: K = (0.1 + (50 / R))* ((D / d)**4 - 1)
-    
+    following formula: k = (0.1 + (50 / R))* ((D / d)**4 - 1) 
+                       P = -k p (v**2) / 2000
+    Where: 
+        k is a constant computed by the first formula and 
+          used in the second formula
+        R is the Reynolds number that corresponds to the 
+          pipe with the larger diameter
+        D is the diameter of the larger pipe in meters
+        d is the diameter of the smaller pipe in meters
+        P is the lost pressure kilopascals
+        p is the density of water (998.2 kilogram / meter3)
+        v is the velocity of the water flowing through the 
+          larger diameter pipe in meters / second
+
+    Parameters:
+        larger_diameter,
+        fluid_velocity, 
+        reynolds_number, 
+        smaller_diameter.
+    Return:
+      pressure_kilopascuals
+
     """
