@@ -175,5 +175,5 @@ def main():
     velocity = SUPPLY_VELOCITY
     reynolds = reynolds_number(diameter, velocity)
     loss = pressure_loss_from_pipe(diameter, length1, friction, velocity)
-    
+    pressure += loss
 
