@@ -1,5 +1,5 @@
 """
-Copyrights 2024 - By Victor dos Santos - BYU-I
+Copyrights 2024 - By Victor dos Santos 
 
     This is a test program that test the water_flow.py file.
     There are three functions that will be verified as the
