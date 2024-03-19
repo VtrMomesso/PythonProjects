@@ -159,3 +159,5 @@ SUPPLY_VELOCITY = 1.65               # (meters / second)
 HDPE_SDR11_INNER_DIAMETER = 0.048692 # (meters)  1.917 inches
 HDPE_SDR11_FRICTION_FACTOR = 0.018   # (unitless)
 HOUSEHOLD_VELOCITY = 1.75            # (meters / second)
+
+def main():
