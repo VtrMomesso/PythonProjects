@@ -172,4 +172,5 @@ def main():
 
     diameter = PVC_SCHED80_INNER_DIAMETER
     friction = PVC_SCHED80_FRICTION_FACTOR
-        velocity = SUPPLY_VELOCITY
+    velocity = SUPPLY_VELOCITY
+    reynolds = reynolds_number(diameter, velocity)
