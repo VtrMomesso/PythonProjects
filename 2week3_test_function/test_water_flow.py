@@ -13,11 +13,13 @@ Copyrights 2024 - By Victor dos Santos - BYU-I
 """
 
 # Import the necessaries files to work this project
-from water_flow import water_column_height, pressure_gain_from_water_height, pressure_loss_from_pipe
+from water_flow import water_column_height, pressure_gain_from_water_height, pressure_loss_from_pipe, pressure_loss_from_fittings
 from pytest import approx
 import pytest
 import math
 
+#This variable helps on the test statments, and brings a tolerance by error
+tolerance = 0.001
 
 def test_water_column_height():
     """Verify that the water_column_height function works correctly.
@@ -64,9 +66,6 @@ def test_pressure_loss_from_pipe():
         fluid_velocity.
     Return: nothing
     """
-    
-    #This variable helps on the test statments, and brings a tolerance by error
-    tolerance = 0.001
 
     # The if statiment helps we find the condition where the code will work.
     if abs(0) < tolerance:
@@ -78,6 +77,23 @@ def test_pressure_loss_from_pipe():
         assert pressure_loss_from_pipe(0.048692, 200.00, 0.018, 1.65) == approx(-100.462, abs= tolerance)
         assert pressure_loss_from_pipe(0.286870, 1000.00, 0.013, 1.65) == approx(-61.576, abs=tolerance)
         assert pressure_loss_from_pipe(0.286870, 1800.75, 0.013, 1.65) == approx(-110.884, abs=tolerance)
+
+
+def test_pressure_loss_from_fittings():
+    """Verify that the pressure_loss_from_pipe function works correctly.
+
+    Parameters: 
+        fluid_velocity,
+        quantity_fittings.
+    Return: nothing
+    """
+    if abs(0) < tolerance:
+
+        assert pressure_loss_from_fittings(0.00, 3) == approx(0.000, abs=tolerance)
+        assert pressure_loss_from_fittings(1.65, 0) == approx(0.00, abs=tolerance)
+        assert pressure_loss_from_fittings(1.65, 2) == approx(-0.109, abs=tolerance)
+        assert pressure_loss_from_fittings(1.75, 2) == approx(-0.122, abs=tolerance)
+        
 
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
