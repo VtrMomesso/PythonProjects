@@ -110,6 +110,11 @@ def test_reynolds_number():
     """
 
     #This variable helps on the test statments, and brings a tolerance by error
-    tolerance = 1    
+    tolerance = 1  
+
+    if abs(0.0) < tolerance: 
+
+        
+
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
