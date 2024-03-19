@@ -103,5 +103,18 @@ def reynolds_number(hydraulic_diameter, fluid_velocity):
     is a unitless ratio of the inertial and viscous forces 
     in a fluid that is useful for predicting fluid flow in 
     different situations.The calculations is made as the 
-    following formula: R = (pwv) / m
+    following formula: R = (pwv) / μ
+    Where:
+        R is the Reynolds number
+        p is the density of water (998.2 kilogram / meter3)
+        d is the hydraulic diameter of a pipe in meters. For a round pipe, the hydraulic diameter is the same as the pipe’s inner diameter.
+        v is the velocity of the water flowing through the pipe in meters / second
+        μ is the dynamic viscosity of water (0.0010016 Pascal seconds)
+
+    Parameters:
+        hydraulic_diameter, 
+        fluid_velocity.
+    Return: reynolds
     """
+    reynolds = (998.2 * hydraulic_diameter * fluid_velocity) / 0.0010016
+    return reynolds
