@@ -54,6 +54,12 @@ def test_pressure_gain_from_water_height():
 
 
 def test_pressure_loss_from_pipe():
+    """Verify that the pressure_loss_from_pipe function works correctly.
+
+    Parameters: 
+        height
+    Return: nothing
+    """
 
     tolerance = 0.001
 
