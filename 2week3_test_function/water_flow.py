@@ -151,3 +151,4 @@ def pressure_loss_from_pipe_reduction(larger_diameter,
 
     pressure_kilopascals = ((-K * 998.2) * (fluid_velocity ** 2)) / 2000
     return pressure_kilopascals
+
