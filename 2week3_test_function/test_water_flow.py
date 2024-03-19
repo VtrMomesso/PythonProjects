@@ -13,7 +13,7 @@ Copyrights 2024 - By Victor dos Santos - BYU-I
 """
 
 # Import the necessaries files to work this project
-from water_flow import water_column_height, pressure_gain_from_water_height, pressure_loss_from_pipe, pressure_loss_from_fittings
+from water_flow import water_column_height, pressure_gain_from_water_height, pressure_loss_from_pipe, pressure_loss_from_fittings, reynolds_number
 from pytest import approx
 import pytest
 import math
@@ -99,5 +99,17 @@ def test_pressure_loss_from_fittings():
         assert pressure_loss_from_fittings(1.75, 2) == approx(-0.122, abs=tolerance)
         assert pressure_loss_from_fittings(1.75, 5) == approx(-0.306, abs=tolerance)
 
+
+def test_reynolds_number():
+    """Verify that the reynolds_number function works correctly.
+
+    Parameters: 
+        hydraulic_diameter, 
+        fluid_velocity
+    Return: nothing
+    """
+
+    #This variable helps on the test statments, and brings a tolerance by error
+    tolerance = 1    
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
