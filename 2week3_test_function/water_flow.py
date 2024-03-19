@@ -118,3 +118,12 @@ def reynolds_number(hydraulic_diameter, fluid_velocity):
     """
     reynolds = (998.2 * hydraulic_diameter * fluid_velocity) / 0.0010016
     return reynolds
+
+
+def pressure_loss_from_pipe_reduction(larger_diameter,
+        fluid_velocity, reynolds_number, smaller_diameter):
+    """that calculates the water pressure lost because of water 
+    moving from a pipe with a large diameter into a pipe with 
+    a smaller diameter. 
+    
+    """
