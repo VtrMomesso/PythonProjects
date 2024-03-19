@@ -163,3 +163,5 @@ HOUSEHOLD_VELOCITY = 1.75            # (meters / second)
 def main():
     tower_height = float(input("Height of water tower (meters): "))
     tank_height = float(input("Height of water tank walls (meters): "))
+    length1 = float(input("Length of supply pipe from tank to lot (meters): "))
+    quantity_angles = int(input("Number of 90° angles in supply pipe: "))
