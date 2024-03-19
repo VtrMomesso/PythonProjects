@@ -73,9 +73,10 @@ def pressure_loss_from_pipe(pipe_diameter,
     
     return pressure
 
+
 def pressure_loss_from_fittings(
         fluid_velocity, quantity_fittings):
-    """that calculates the water pressure lost because 
+    """this function calculates the water pressure lost because 
     of fittings such as 45° and 90° bends that are in a 
     pipeline. The calculations is made as the 
     following formula: P = (-0.04 p (v**2) n) / 2000
@@ -93,5 +94,14 @@ def pressure_loss_from_fittings(
         pressure_loss
     """
     pressure_loss = ((-0.04 * 998.2 * (fluid_velocity * fluid_velocity) * quantity_fittings) / 2000)
-    
     return pressure_loss
+
+
+def reynolds_number(hydraulic_diameter, fluid_velocity):
+    """that calculates and returns the Reynolds number for 
+    a pipe with water flowing through it. The Reynolds number
+    is a unitless ratio of the inertial and viscous forces 
+    in a fluid that is useful for predicting fluid flow in 
+    different situations.The calculations is made as the 
+    following formula: R = (pwv) / m
+    """
