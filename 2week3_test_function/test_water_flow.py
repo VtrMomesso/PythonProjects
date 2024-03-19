@@ -121,6 +121,21 @@ def test_reynolds_number():
         assert reynolds_number(0.286870, 1.75) == approx(500318, abs=tolerance)
 
 
-def test_
+def test_pressure_loss_from_pipe_reduction():
+    """Verify that the pressure_loss_from_pipe_reduction function works correctly.
+
+    Parameters: 
+        larger_diameter,
+        fluid_velocity, 
+        reynolds_number, 
+        smaller_diameter.
+    Return: nothing
+    """
+
+    #This variable helps on the test statments, and brings a tolerance by error
+    tolerance = 0.001 
+
+     
+
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
