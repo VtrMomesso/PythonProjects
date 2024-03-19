@@ -169,3 +169,6 @@ def main():
 
     water_height = water_column_height(tower_height, tank_height)
     pressure = pressure_gain_from_water_height(water_height)
+
+    diameter = PVC_SCHED80_INNER_DIAMETER
+    friction = PVC_SCHED80_FRICTION_FACTOR
