@@ -187,3 +187,4 @@ def main():
     diameter = HDPE_SDR11_INNER_DIAMETER
     friction = HDPE_SDR11_FRICTION_FACTOR
     velocity = HOUSEHOLD_VELOCITY
+    loss = pressure_loss_from_pipe(diameter, length2, friction, velocity)
