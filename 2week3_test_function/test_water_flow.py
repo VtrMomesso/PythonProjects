@@ -23,7 +23,8 @@ def test_water_column_height():
     """Verify that the water_column_height function works correctly.
 
     Parameters: 
-        tower_height, tank_height
+        tower_height, 
+        tank_height.
     Return: nothing
     """
 
@@ -57,13 +58,17 @@ def test_pressure_loss_from_pipe():
     """Verify that the pressure_loss_from_pipe function works correctly.
 
     Parameters: 
-        height
+        pipe_diameter,
+        pipe_length, 
+        friction_factor, 
+        fluid_velocity.
     Return: nothing
     """
-
+    
+    
     tolerance = 0.001
 
-    if abs(-61.576) < tolerance:
+    if abs(0) < tolerance:
 
         assert pressure_loss_from_pipe(0.048692, 0.00, 0.018, 1.75) == approx(0.00, abs=tolerance)
         assert pressure_loss_from_pipe(0.048692, 200.00, 0.00, 1.75) == approx(0.00, abs=tolerance)
