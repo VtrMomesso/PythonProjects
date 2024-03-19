@@ -177,3 +177,4 @@ def main():
     loss = pressure_loss_from_pipe(diameter, length1, friction, velocity)
     pressure += loss
 
+    loss = pressure_loss_from_fittings(velocity, quantity_angles)
