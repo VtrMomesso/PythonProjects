@@ -68,7 +68,15 @@ def pressure_loss_from_pipe(pipe_diameter,
         friction_factor: is a float value
         fluid_velocity: is a float value
     Return: pressure
-"""
+    """
     pressure = (-friction_factor * pipe_length * 998.2 * fluid_velocity * fluid_velocity) / (2000 * pipe_diameter)
     
     return pressure
+
+def pressure_loss_from_fittings(
+        fluid_velocity, quantity_fittings):
+    """that calculates the water pressure lost because 
+    of fittings such as 45° and 90° bends that are in a 
+    pipeline.
+    Where:
+        """
