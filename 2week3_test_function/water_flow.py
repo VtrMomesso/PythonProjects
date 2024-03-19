@@ -77,7 +77,8 @@ def pressure_loss_from_fittings(
         fluid_velocity, quantity_fittings):
     """that calculates the water pressure lost because 
     of fittings such as 45° and 90° bends that are in a 
-    pipeline.
+    pipeline. The calculations is made as the 
+    following formula: P = (-0.04 p (v**2) n) / 2000
     Where:
         P is the lost pressure in kilopascals 
         p is the density of water (998.2 kilogram / meter3)
@@ -91,3 +92,6 @@ def pressure_loss_from_fittings(
     Return: 
         pressure_loss
     """
+    pressure_loss = (-0.04 * 998.2 (fluid_velocity * fluid_velocity) * quantity_fittings) / 2000
+
+    return pressure_loss
