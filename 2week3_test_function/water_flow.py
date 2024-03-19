@@ -155,3 +155,7 @@ def pressure_loss_from_pipe_reduction(larger_diameter,
 PVC_SCHED80_INNER_DIAMETER = 0.28687 # (meters)  11.294 inches
 PVC_SCHED80_FRICTION_FACTOR = 0.013  # (unitless)
 SUPPLY_VELOCITY = 1.65               # (meters / second)
+
+HDPE_SDR11_INNER_DIAMETER = 0.048692 # (meters)  1.917 inches
+HDPE_SDR11_FRICTION_FACTOR = 0.018   # (unitless)
+HOUSEHOLD_VELOCITY = 1.75            # (meters / second)
