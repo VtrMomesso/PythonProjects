@@ -65,9 +65,10 @@ def test_pressure_loss_from_pipe():
     Return: nothing
     """
     
-    
+    #This variable helps on the test statments, and brings a tolerance by error
     tolerance = 0.001
 
+    # The if statiment helps we find the condition where the code will work.
     if abs(0) < tolerance:
 
         assert pressure_loss_from_pipe(0.048692, 0.00, 0.018, 1.75) == approx(0.00, abs=tolerance)
