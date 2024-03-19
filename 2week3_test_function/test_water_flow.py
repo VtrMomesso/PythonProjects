@@ -13,7 +13,7 @@ Copyrights 2024 - By Victor dos Santos - BYU-I
 """
 
 # Import the necessaries files to work this project
-from water_flow import water_column_height, pressure_gain_from_water_height, pressure_loss_from_pipe, pressure_loss_from_fittings, reynolds_number
+from water_flow import water_column_height, pressure_gain_from_water_height, pressure_loss_from_pipe, pressure_loss_from_fittings, reynolds_number, pressure_loss_from_pipe_reduction
 from pytest import approx
 import pytest
 import math
@@ -135,7 +135,9 @@ def test_pressure_loss_from_pipe_reduction():
     #This variable helps on the test statments, and brings a tolerance by error
     tolerance = 0.001 
 
-     
+    if abs(0) < tolerance:
+
+        assert pressure_loss_from_pipe_reduction(0.28687, 0.00, 1, 0.048692) == approx(0.000, abs=tolerance)
 
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
