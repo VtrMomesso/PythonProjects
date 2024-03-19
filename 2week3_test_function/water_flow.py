@@ -189,3 +189,5 @@ def main():
     velocity = HOUSEHOLD_VELOCITY
     loss = pressure_loss_from_pipe(diameter, length2, friction, velocity)
     pressure += loss
+    
+    print(f"Pressure at house: {pressure:.1f} kilopascals")
