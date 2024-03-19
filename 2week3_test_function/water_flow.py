@@ -178,3 +178,4 @@ def main():
     pressure += loss
 
     loss = pressure_loss_from_fittings(velocity, quantity_angles)
+    pressure += loss
