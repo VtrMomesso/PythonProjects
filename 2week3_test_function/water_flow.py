@@ -79,4 +79,15 @@ def pressure_loss_from_fittings(
     of fittings such as 45° and 90° bends that are in a 
     pipeline.
     Where:
-        """
+        P is the lost pressure in kilopascals 
+        p is the density of water (998.2 kilogram / meter3)
+        v is the velocity of the water flowing through the 
+          pipe in meters / second
+        n is the quantity of fittings
+
+    Parameters:
+        fluid_velocity,
+        quantity_fittings.
+    Return: 
+        pressure_loss
+    """
