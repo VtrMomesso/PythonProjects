@@ -115,6 +115,7 @@ def test_reynolds_number():
     if abs(0.0) < tolerance: 
 
         assert reynolds_number(0.048692, 0.00) == approx(0, abs=tolerance)
+        assert reynolds_number(0.048692, 1.65) == approx(80069, abs=tolerance)
 
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
