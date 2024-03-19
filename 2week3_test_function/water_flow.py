@@ -161,3 +161,5 @@ HDPE_SDR11_FRICTION_FACTOR = 0.018   # (unitless)
 HOUSEHOLD_VELOCITY = 1.75            # (meters / second)
 
 def main():
+    tower_height = float(input("Height of water tower (meters): "))
+    tank_height = float(input("Height of water tank walls (meters): "))
