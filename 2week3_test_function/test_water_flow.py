@@ -41,6 +41,12 @@ def test_water_column_height():
 
 
 def test_pressure_gain_from_water_height():
+    """Verify that the pressure_gain_from_water_height function works correctly.
+
+    Parameters: 
+        height
+    Return: nothing
+    """
 
     assert pressure_gain_from_water_height(0) == approx(0.00)
     assert pressure_gain_from_water_height(30.2) == approx(295.628)
