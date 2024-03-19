@@ -98,7 +98,7 @@ def pressure_loss_from_fittings(
 
 
 def reynolds_number(hydraulic_diameter, fluid_velocity):
-    """that calculates and returns the Reynolds number for 
+    """this function calculates and returns the Reynolds number for 
     a pipe with water flowing through it. The Reynolds number
     is a unitless ratio of the inertial and viscous forces 
     in a fluid that is useful for predicting fluid flow in 
@@ -122,8 +122,9 @@ def reynolds_number(hydraulic_diameter, fluid_velocity):
 
 def pressure_loss_from_pipe_reduction(larger_diameter,
         fluid_velocity, reynolds_number, smaller_diameter):
-    """that calculates the water pressure lost because of water 
+    """this function calculates the water pressure lost because of water 
     moving from a pipe with a large diameter into a pipe with 
-    a smaller diameter. 
+    a smaller diameter. The calculations is made as the 
+    following formula: K = (0.1 + (50 / R))* ((D / d)**4 - 1)
     
     """
