@@ -174,3 +174,6 @@ def main():
     friction = PVC_SCHED80_FRICTION_FACTOR
     velocity = SUPPLY_VELOCITY
     reynolds = reynolds_number(diameter, velocity)
+    loss = pressure_loss_from_pipe(diameter, length1, friction, velocity)
+    
+
