@@ -138,6 +138,7 @@ def test_pressure_loss_from_pipe_reduction():
     if abs(0) < tolerance:
 
         assert pressure_loss_from_pipe_reduction(0.28687, 0.00, 1, 0.048692) == approx(0.000, abs=tolerance)
+        assert pressure_loss_from_pipe_reduction(0.28687, 1.65, 471729, 0.048692) == approx(-163.744, abs=tolerance)
 
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
