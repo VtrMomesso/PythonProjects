@@ -4,9 +4,8 @@
 
 def main():
 
-    SYMBOL = 0
-    NAME = 1
-    ATOMIC_MASS = 2
+    ELEMENTE_INDEX = 1
+    ATOMIC_MASS_INDEX = 2
 
     # Call make_periodic_table function and store the returned list in a variable
     periodic_table = make_periodic_table()
@@ -20,7 +19,13 @@ def main():
 
     if chemical_formula and mass in periodic_table[chemical_formula, mass]:
 
+        values = periodic_table[chemical_formula, mass]
+
+        elemente = values[ELEMENTE_INDEX] 
+        atomic_mass = values[ATOMIC_MASS_INDEX]
+
         
+
         # Print the name and atomic mass for each chemical element on a separate line
         print("Chemical elements in the periodic table:")
         
