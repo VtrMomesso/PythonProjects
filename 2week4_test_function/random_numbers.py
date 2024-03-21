@@ -54,6 +54,10 @@ def append_random_numbers(numbers_list, quantity=1):
         return anything because this function changes the 
         numbers_list.
     """
+    for _ in range(quantity):
+        random_number = random.uniform(0, 100)
+        rounded = round(random_number, 1)
+        numbers_list.append(rounded)
 
 
 def append_random_words(words_list, quantity=1):
@@ -70,7 +74,7 @@ def append_random_words(words_list, quantity=1):
         the words_list.
     """
 
-    
+
 
 
 # then call the main function. However, if this file
