@@ -17,4 +17,4 @@ def main():
     # with one arguments to add one random number
     # to the numbers list.
     append_random_numbers(numbers)
-    
+    print(f"Numbers {numbers}")
