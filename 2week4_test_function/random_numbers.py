@@ -28,3 +28,5 @@ def main():
     # Create a list to store random words.
     words = []
 
+
+def append_random_numbers():
