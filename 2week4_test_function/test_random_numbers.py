@@ -36,6 +36,8 @@ def test_append_random_numbers():
 
     # Verify that all the elements in the numbers list
     # are floating point numbers.
+    for x in numbers_list:
+        assert isinstance(x, float)
 
 
 def test_append_random_words():
