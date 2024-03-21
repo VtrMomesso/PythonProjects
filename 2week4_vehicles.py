@@ -29,7 +29,9 @@ def main():
 
         # Find the data for the vehicle that the user wants.
         value_list = vehicles_dict[vin]
-        
+
+        # Print the manufacturer, model, and color of the vehicle.
+        # Don't print the year, engine design, or siplacement.
          
 
 if __name__ == "__main__":
