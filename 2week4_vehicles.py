@@ -17,5 +17,10 @@ def main():
         "2T3BF4DV9QR146782": [2012, "Toyota", "RAV 4", "green", "I4", 2.5]
     }
 
+    MANUFACTURER_INDEX = 1
+    MODEL_INDEX = 2
+    COLOR_INDEX = 3
+
+
 if __name__ == "__main__":
     main()
