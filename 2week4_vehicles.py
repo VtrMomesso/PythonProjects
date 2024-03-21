@@ -32,7 +32,12 @@ def main():
 
         # Print the manufacturer, model, and color of the vehicle.
         # Don't print the year, engine design, or siplacement.
-         
+        manufacturer = value_list[MANUFACTURER_INDEX]
+        model = value_list[MODEL_INDEX]
+        color = value_list[COLOR_INDEX]
+        print(manufacturer, model, color)
+
+     
 
 if __name__ == "__main__":
     main()
