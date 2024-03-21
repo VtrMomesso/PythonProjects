@@ -14,6 +14,9 @@ def test_append_random_numbers():
     # Create an empty list named numbers_list.
     numbers_list = []
 
+    # Verify that the length of the empty list is zero.
+    assert len(numbers_list) == 0
+
 def test_append_random_words():
 
 
