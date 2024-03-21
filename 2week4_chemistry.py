@@ -73,20 +73,20 @@ def make_periodic_table():
         ["Pr]",	"Praseodymium",	140.90765],
         ["Pt",	"Platinum",	195.084],
         ["Pu",	"Plutonium",	244],
-        "Ra",	"Radium",	226]
-        "Rb",	"Rubidium",	85.4678]
-        "Re",	"Rhenium",	186.207]
-        "Rh",	"Rhodium",	102.9055]
-        "Rn",	"Radon",	222]
-        "Ru",	"Ruthenium",	101.07
-        "S",	"Sulfur"],	32.065
-        "Sb",	"Antimony",	121.76
-        "Sc",	"Scandium",	44.955912
-        "Se",	"Selenium",	78.96
-        "Si",	"Silicon",	28.0855
-        "Sm",	"Samarium",	150.36
-        "Sn",	"Tin",	118.71
-        "Sr",	"Strontium",	87.62
+        ["Ra",	"Radium",	226],
+        ["Rb",	"Rubidium",	85.4678],
+        ["Re",	"Rhenium",	186.207],
+        ["Rh",	"Rhodium",	102.9055],
+        ["Rn",	"Radon",	222],
+        ["Ru",	"Ruthenium",	101.07],
+        ["S",	"Sulfur",	32.065],
+        ["Sb",	"Antimony",	121.76],
+        ["Sc",	"Scandium",	44.955912],
+        ["Se",	"Selenium",	78.96],
+        ["Si",	"Silicon",	28.0855],
+        ["Sm",	"Samarium",	150.36],
+        ["Sn",	"Tin",	118.71],
+        ["Sr",	"Strontium",	87.62],
         "Ta",	"Tantalum",	180.94788
         "Tb",	"Terbium",	158.92535
         "Tc",	"Technetium",	98
