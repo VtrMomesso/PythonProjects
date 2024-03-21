@@ -37,7 +37,11 @@ def main():
         color = value_list[COLOR_INDEX]
         print(manufacturer, model, color)
 
-     
+    else:
+        # Print a message stating that the VIN entered
+        # by the user is not in the dictionary.
+        print(f"{vin} in not in the dictionary")
 
+# This call the main function and the file will begin to run.
 if __name__ == "__main__":
     main()
