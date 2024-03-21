@@ -74,6 +74,12 @@ def append_random_words(words_list, quantity=1):
         the words_list.
     """
 
+    # A list of words to randomly choose from.
+    candidates = [
+        "arm", "car", "cloud", "head", "heal", "hydrogen", "jog",
+        "join", "laugh", "love", "sleep", "smile", "speak",
+        "sunshine", "toothbrush", "tree", "truth", "walk", "water"
+    ]
 
 
 
