@@ -66,6 +66,8 @@ def test_append_random_words():
     # Call the append_random_words function to append three words.
     append_random_words(words_list, 3)
    
+    # Verify that the words_list now has four element.
+    assert len(words_list) == 4
 
 
 
