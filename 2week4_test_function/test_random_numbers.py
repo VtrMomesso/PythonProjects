@@ -59,7 +59,9 @@ def test_append_random_words():
 
     # Verify that all the elements in the words list
     # are strings characteres.
-
+    for word in words_list:
+        assert isinstance(word, str)
+        assert len(word) >= 1
 
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
