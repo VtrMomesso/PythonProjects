@@ -4,10 +4,11 @@
 
 def main():
 
-    ELEMENTE_INDEX = 1
+    NAME_INDEX = 1
     ATOMIC_MASS_INDEX = 2
 
-    # Call make_periodic_table function and store the returned list in a variable
+    # Call make_periodic_table function and store the returned list in 
+    # a variable
     periodic_table = make_periodic_table()
 
 
@@ -21,13 +22,13 @@ def main():
 
         values = periodic_table[chemical_formula, mass]
 
-        elemente = values[ELEMENTE_INDEX] 
+        name = values[NAME_INDEX] 
         atomic_mass = values[ATOMIC_MASS_INDEX]
-
-        
-
-        # Print the name and atomic mass for each chemical element on a separate line
+    
+        # Print the name and atomic mass for each chemical element on 
+        # a separate line
         print("Chemical elements in the periodic table:")
+
         
     for element in periodic_table:
         name, atomic_mass = element[1], element[2]
