@@ -6,9 +6,17 @@ def main():
 
 
 def make_periodic_table():
+    """ This function named make_periodic_table is a 
+    functions that contains all the elements on the 
+    periodic table.
+    
+    Parameter: 
+        none
+        
+    Return: compound_list"""
 
     periodic_table_list = [
-    # Symbol	Name	Atomic Mass
+    # [Symbol,	Name,	Atomic_Mass]
         ["Ac",	"Actinium",	227],
         ["[Ag",	"Silver",	107.8682],
         ["Al",	"Aluminum",	26.9815386],
@@ -104,3 +112,5 @@ def make_periodic_table():
         ["Zn",	"Zinc",	65.38],
         ["Zr",	"Zirconium",	91.224]
     ]
+
+    return periodic_table_list
