@@ -81,6 +81,10 @@ def append_random_words(words_list, quantity=1):
         "sunshine", "toothbrush", "tree", "truth", "walk", "water"
     ]
 
+    # Randomly choose quantity words and append them onto words_list.
+    for _ in range(quantity):
+        word = random.choice(candidates)
+        words_list.append(word)
 
 
 # then call the main function. However, if this file
