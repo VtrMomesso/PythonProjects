@@ -31,6 +31,10 @@ def test_append_random_numbers():
     # Call the append_random_numbers function to append three numbers.
     append_random_numbers(numbers_list, 3)
 
+    # Verify that the numbers list now has four elements.
+    assert len(numbers_list) == 4
+    
+
 def test_append_random_words():
 
 
