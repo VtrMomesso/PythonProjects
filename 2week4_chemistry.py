@@ -28,11 +28,10 @@ def main():
         # Print the name and atomic mass for each chemical element on 
         # a separate line
         print("Chemical elements in the periodic table:")
+        print(f"Name: {name} - Atomic Mass: {atomic_mass}")
 
-        
-    for element in periodic_table:
-        name, atomic_mass = element[1], element[2]
-        print(f"{name}: Atomic Mass - {atomic_mass}")
+    else:
+        print(f"The {chemical_formula} and {mass} aren't on dictionary.")
         
 
 
