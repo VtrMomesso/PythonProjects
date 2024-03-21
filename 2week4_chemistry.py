@@ -87,20 +87,20 @@ def make_periodic_table():
         ["Sm",	"Samarium",	150.36],
         ["Sn",	"Tin",	118.71],
         ["Sr",	"Strontium",	87.62],
-        "Ta",	"Tantalum",	180.94788
-        "Tb",	"Terbium",	158.92535
-        "Tc",	"Technetium",	98
-        "Te",	"Tellurium",	127.6
-        "Th",	"Thorium",	232.03806
-        "Ti",	"Titanium",	47.867
-        "Tl",	"Thallium",	204.3833
-        "Tm",	"Thulium",	168.93421
-        "U",	"Uranium",	238.02891
-        "V",	"Vanadium",	50.9415
-        "W",	"Tungsten",	183.84
-        "Xe",	"Xenon",	131.293
-        "Y",	"Yttrium",	88.90585
-        "Yb",	"Ytterbium",	173.054
-        "Zn",	"Zinc",	65.38
-        "Zr",	"Zirconium",	91.224
+        ["Ta",	"Tantalum",	180.94788],
+        ["Tb",	"Terbium",	158.92535],
+        ["Tc",	"Technetium",	98],
+        ["Te",	"Tellurium",	127.6],
+        ["Th",	"Thorium",	232.03806],
+        ["Ti",	"Titanium",	47.867],
+        ["Tl",	"Thallium",	204.3833],
+        ["Tm",	"Thulium",	168.93421],
+        ["U",	"Uranium",	238.02891],
+        ["V",	"Vanadium",	50.9415],
+        ["W",	"Tungsten",	183.84],
+        ["Xe",	"Xenon",	131.293],
+        ["Y",	"Yttrium",	88.90585],
+        ["Yb",	"Ytterbium",	173.054],
+        ["Zn",	"Zinc",	65.38],
+        ["Zr",	"Zirconium",	91.224]
     ]
