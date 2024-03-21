@@ -69,6 +69,8 @@ def test_append_random_words():
     # Verify that the words_list now has four element.
     assert len(words_list) == 4
 
+    # Verify that all the elements in the words list
+    # are strings characteres.
 
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
