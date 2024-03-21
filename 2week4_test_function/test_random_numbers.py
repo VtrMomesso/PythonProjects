@@ -20,6 +20,9 @@ def test_append_random_numbers():
     # Call the append_random_numbers function to append one number.
     append_random_numbers(numbers_list)
 
+    # Verify that the numbers list now has one element.
+    assert len(numbers_list) == 1
+
 def test_append_random_words():
 
 
