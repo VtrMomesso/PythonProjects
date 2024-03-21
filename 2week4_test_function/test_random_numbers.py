@@ -63,5 +63,10 @@ def test_append_random_words():
         assert isinstance(word, str)
         assert len(word) >= 1
 
+    # Call the append_random_words function to append three words.
+    append_random_words(words_list, 3)
+   
+
+
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
