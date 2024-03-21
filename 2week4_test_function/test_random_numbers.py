@@ -33,7 +33,10 @@ def test_append_random_numbers():
 
     # Verify that the numbers list now has four elements.
     assert len(numbers_list) == 4
-    
+
+    # Verify that all the elements in the numbers list
+    # are floating point numbers.
+
 
 def test_append_random_words():
 
