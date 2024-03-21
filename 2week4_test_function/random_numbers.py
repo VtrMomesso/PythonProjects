@@ -1,6 +1,6 @@
 # Copyrights 2024 - By Victor dos Santos
 
-# Random Number With functions
+# Random Number and Random Words With Functions
 
 """
 Write and call functions that demonstrate both
@@ -25,3 +25,6 @@ def main():
     append_random_numbers(numbers)
     print(f"Numbers {numbers}")
     
+    # Create a list to store random words.
+    words = []
+
