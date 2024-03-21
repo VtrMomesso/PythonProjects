@@ -45,6 +45,7 @@ def test_append_random_words():
     Parameters: none
     Return: nothing
     """
-    
+    # Create an empty list named words_list.
+    words_list = []
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
