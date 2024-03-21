@@ -18,3 +18,8 @@ def main():
     # to the numbers list.
     append_random_numbers(numbers)
     print(f"Numbers {numbers}")
+
+    # Call the append_ random_numbers functions
+    # with one arguments to add three random number
+    # to the numbers list.
+    
