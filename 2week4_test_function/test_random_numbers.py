@@ -54,8 +54,9 @@ def test_append_random_words():
     # Call the append_random_words function to append one number.
     append_random_words(words_list)
 
-    # Verify that the numbers list now has one element.
-    
+    # Verify that the words_list now has one element.
+    assert len(words_list) == 1
+
 
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
