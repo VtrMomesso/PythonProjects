@@ -24,5 +24,10 @@ def main():
     # Ask the user for a vehicle identification number (VIN).
     vin = input("Please enter a VIN: ")
 
+    # Check if the vin is a key that is in the vehicles dictionary.
+    if vin in vehicles_dict[vin]
+    
+
+
 if __name__ == "__main__":
     main()
