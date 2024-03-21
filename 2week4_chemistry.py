@@ -12,15 +12,18 @@ def main():
     periodic_table = make_periodic_table()
 
 
-         # Get chemical formula from user
+    # Get chemical formula from user
     chemical_formula = input("Enter the chemical formula of the molecule: ")
 
     # Get mass of chemical sample in grams from user
     mass = float(input("Enter the mass of the chemical sample in grams: "))
 
+    if chemical_formula and mass in periodic_table[chemical_formula, mass]:
 
-    # Print the name and atomic mass for each chemical element on a separate line
-    print("Chemical elements in the periodic table:")
+        
+        # Print the name and atomic mass for each chemical element on a separate line
+        print("Chemical elements in the periodic table:")
+        
     for element in periodic_table:
         name, atomic_mass = element[1], element[2]
         print(f"{name}: Atomic Mass - {atomic_mass}")
