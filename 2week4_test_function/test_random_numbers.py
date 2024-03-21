@@ -7,8 +7,13 @@ from random_numbers import append_random_words
 import pytest
 
 def test_append_random_numbers():
+    """Verify that the append_random_numbers function works correctly.
+    Parameters: none
+    Return: nothing
+    """
 
-def test_append_random_words():
     
+def test_append_random_words():
+
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
