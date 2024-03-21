@@ -56,7 +56,22 @@ def append_random_numbers(numbers_list, quantity=1):
     """
 
 
-def append_random_words():
+def append_random_words(words_list, quantity=1):
+    """Append quantity randomly chosen words onto the words 
+    list.
+    
+    Parameters:
+        words_list: A list of words where this function
+            will append random words.
+        quantity: The number of random words that this 
+            function will append onto words_list.
+    Return: nothing. It's unnecessary for this function
+        to return anything because this function changes 
+        the words_list.
+    """
+
+    
+
 
 # then call the main function. However, if this file
 # was simply imported, then skip the call to main.
