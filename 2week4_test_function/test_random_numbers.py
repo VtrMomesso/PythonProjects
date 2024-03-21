@@ -48,4 +48,9 @@ def test_append_random_words():
     # Create an empty list named words_list.
     words_list = []
 
+    # Verify that the length of the empty list is zero.
+    assert len(words_list) == 0
+
+    
+
 pytest.main(["-v", "--tb=line", "-rN", __file__])
