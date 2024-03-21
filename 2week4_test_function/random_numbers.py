@@ -37,3 +37,8 @@ def main():
 def append_random_numbers():
 
 def append_random_words():
+
+# then call the main function. However, if this file
+# was simply imported, then skip the call to main.
+if __name__ == "__main__":
+    main()
