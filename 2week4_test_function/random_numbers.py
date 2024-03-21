@@ -41,7 +41,20 @@ def main():
     print(f"Words: {words}")
 
 
-def append_random_numbers():
+def append_random_numbers(numbers_list, quantity=1):
+    """Append quantity random numbers onto the numbers list.
+    The random numbers are between 0 and 100, inclusive.
+    
+    Parameters:
+        numbers_list: A list of numbers where this function
+            will append random numbers.
+        quantity: The number of random numbers that this 
+            function will append onto numbers_list.
+    Return: nothing. It's unnecessary for this function to 
+        return anything because this function changes the 
+        numbers_list.
+    """
+
 
 def append_random_words():
 
