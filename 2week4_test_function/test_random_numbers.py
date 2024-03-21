@@ -41,6 +41,10 @@ def test_append_random_numbers():
 
 
 def test_append_random_words():
-
+    """Verify that the append_random_words function works correctly.
+    Parameters: none
+    Return: nothing
+    """
+    
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
