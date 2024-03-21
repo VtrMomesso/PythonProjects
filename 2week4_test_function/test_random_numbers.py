@@ -28,6 +28,9 @@ def test_append_random_numbers():
     for x in numbers_list:
         assert isinstance(x, float)
 
+    # Call the append_random_numbers function to append three numbers.
+    append_random_numbers(numbers_list, 3)
+
 def test_append_random_words():
 
 
