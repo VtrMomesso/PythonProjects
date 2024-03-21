@@ -21,6 +21,8 @@ def main():
     MODEL_INDEX = 2
     COLOR_INDEX = 3
 
+    # Ask the user for a vehicle identification number (VIN).
+    vin = input("Please enter a VIN: ")
 
 if __name__ == "__main__":
     main()
