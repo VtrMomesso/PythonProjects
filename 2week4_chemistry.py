@@ -4,6 +4,29 @@
 
 def main():
 
+    SYMBOL = 0
+    NAME = 1
+    ATOMIC_MASS = 2
+
+    # Call make_periodic_table function and store the returned list in a variable
+    periodic_table = make_periodic_table()
+
+
+         # Get chemical formula from user
+    chemical_formula = input("Enter the chemical formula of the molecule: ")
+
+    # Get mass of chemical sample in grams from user
+    mass = float(input("Enter the mass of the chemical sample in grams: "))
+
+
+    # Print the name and atomic mass for each chemical element on a separate line
+    print("Chemical elements in the periodic table:")
+    for element in periodic_table:
+        name, atomic_mass = element[1], element[2]
+        print(f"{name}: Atomic Mass - {atomic_mass}")
+        
+
+
 
 def make_periodic_table():
     """ This function named make_periodic_table is a 
@@ -114,3 +137,6 @@ def make_periodic_table():
     ]
 
     return periodic_table_list
+
+if __name__ == "__name__":
+    main()
