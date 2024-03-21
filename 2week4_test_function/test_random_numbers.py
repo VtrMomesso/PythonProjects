@@ -51,6 +51,8 @@ def test_append_random_words():
     # Verify that the length of the empty list is zero.
     assert len(words_list) == 0
 
-    
+    # Call the append_random_words function to append one number.
+    append_random_words(words_list)
+
 
 pytest.main(["-v", "--tb=line", "-rN", __file__])
