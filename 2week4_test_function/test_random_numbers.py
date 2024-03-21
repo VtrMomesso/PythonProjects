@@ -11,8 +11,9 @@ def test_append_random_numbers():
     Parameters: none
     Return: nothing
     """
+    # Create an empty list named numbers_list.
+    numbers_list = []
 
-    
 def test_append_random_words():
 
 
