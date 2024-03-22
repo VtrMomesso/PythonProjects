@@ -29,14 +29,18 @@ def main():
         # Find the required values and keep in the variable.
         values = periodic_table[chemical_formula, mass]
 
-        
+        # organized the values that it will show to the user.
         name = values[NAME_INDEX] 
         atomic_mass = values[ATOMIC_MASS_INDEX]
     
         # Print the name and atomic mass for each chemical element on 
-        # a separate line
+        # a separate line 
         print("Chemical elements in the periodic table:")
         print(f"Name: {name} - Atomic Mass: {atomic_mass}")
+
+        for i in periodic_table:
+            name = i[NAME_INDEX]
+        print(name)
 
     else:
         print(f"The {chemical_formula} and {mass} aren't on dictionary.")
