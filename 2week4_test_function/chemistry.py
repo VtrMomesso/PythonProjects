@@ -1,6 +1,10 @@
 
+# By Victor Dos Santos | Copyrights 2024 
 
-
+""" This program call two functions, the first is the main function,
+and make_periodic_table function that works as an dictionary and bring
+the periodic table elementes and the main functions find an especific 
+elemente and show to the user. """
 
 def main():
 
