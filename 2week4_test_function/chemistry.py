@@ -8,6 +8,7 @@ elemente and show to the user. """
 
 def main():
 
+
     NAME_INDEX = 1
     ATOMIC_MASS_INDEX = 2
 
@@ -22,10 +23,13 @@ def main():
     # Get mass of chemical sample in grams from user
     mass = float(input("Enter the mass of the chemical sample in grams: "))
 
+    # Check if there is the values that the user asked for.
     if chemical_formula and mass in periodic_table[chemical_formula, mass]:
 
+        # Find the required values and keep in the variable.
         values = periodic_table[chemical_formula, mass]
 
+        
         name = values[NAME_INDEX] 
         atomic_mass = values[ATOMIC_MASS_INDEX]
     
