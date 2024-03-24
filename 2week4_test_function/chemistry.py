@@ -11,26 +11,22 @@ from formula import parse_formula
 
 def main():
 
-
-    NAME_INDEX = 1
-    ATOMIC_MASS_INDEX = 2
-
-    # Call make_periodic_table function and store the returned list in 
-    # a variable
-    periodic_table = make_periodic_table()
-
-
     # Get a chemical formula for a molecule from the user.
     chemical_formula = input("Enter the chemical formula of the molecule: ")
 
     # Get the mass of a chemical sample in grams from the user.
     mass_grams = float(input("Enter the mass in grams of the sample: "))
 
+    # Call make_periodic_table function and 
+    # store the returned list in a variable.
+    periodic_table_dict = make_periodic_table()
+
+
     # Check if there is the values that the user asked for.
-    if chemical_formula and mass_grams in periodic_table[chemical_formula, mass_grams]:
+    if chemical_formula and mass_grams in periodic_table_dict[chemical_formula, mass_grams]:
 
         # Find the required values and keep in the variable.
-        values = periodic_table[chemical_formula, mass_grams]
+        values = periodic_table_dict[chemical_formula, mass_grams]
 
         # organized the values that it will show to the user.
         name = values[NAME_INDEX] 
@@ -41,7 +37,7 @@ def main():
         print("Chemical elements in the periodic table:")
         print(f"Name: {name} - Atomic Mass: {atomic_mass}")
 
-        for i in periodic_table:
+        for i in periodic_table_dict:
             name = i[NAME_INDEX]
         print(name)
 
