@@ -42,3 +42,6 @@ def parse_formula(formula, periodic_table_dict):
                 index += 1
             quant = int(formula[start:index])
         return quant, index
+    
+    def get_quant(elem_dict, symbol):
+        
