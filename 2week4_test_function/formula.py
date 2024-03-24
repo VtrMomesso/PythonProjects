@@ -59,3 +59,4 @@ def parse_formula(formula, periodic_table_dict):
                     prev = get_quant(elem_dict, symbol)
                     curr = prev + group_dict[symbol] * quant
                     elem_dict[symbol] = curr
+            elif ch.isalpha():
