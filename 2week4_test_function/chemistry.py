@@ -37,8 +37,8 @@ def main():
     # Print the molar mass.
     print(f"The molar mass of the molecule is: {molar_mass} g/mol")
 
-
-   
+    # Print the number of moles.
+    print(f"The number of moles in the sample is: {moles} moles")
 
 
 def make_periodic_table():
