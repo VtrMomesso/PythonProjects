@@ -39,7 +39,7 @@ def main():
 
     # Print the number of moles.
     print(f"The number of moles in the sample is: {moles} moles")
-
+    print()
 
 def make_periodic_table():
     """ This function named make_periodic_table is a 
@@ -195,8 +195,22 @@ def compute_molar_mass(symbol_quantity_list, periodic_table_dict):
         total_mass += atomic_mass * quantity
     return total_mass
 
-    # Return the total molar mass.
-    return
+
+def sum_protons(symbol_quantity_list, periodic_table_dict):
+    """Compute and return the total number of protons in
+    all the elements listed in symbol_quantity_list.
+
+    Parameters
+        symbol_quantity_list is a compound list returned
+            from the parse_formula function. Each small
+            list in symbol_quantity_list has this form:
+            ["symbol", quantity].
+        periodic_table_dict is the compound dictionary
+            returned from make_periodic_table.
+    Return: the total number of protons of all
+        the elements in symbol_quantity_list.
+    """
+
 
 
 if __name__ == "__main__":
