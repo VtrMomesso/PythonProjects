@@ -55,3 +55,5 @@ def parse_formula(formula, periodic_table_dict):
             if ch == "(":
                 group_dict, index = parse_r(formula,index+1,level+1)
                 quant, index = parse_quant(formula, index)
+                for symbol in group_dict:
+                    
