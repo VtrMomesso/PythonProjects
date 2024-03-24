@@ -63,3 +63,5 @@ def parse_formula(formula, periodic_table_dict):
                 symbol = formula[index:index+2]
                 if symbol in periodic_table_dict:
                     index += 2
+                else:
+                    symbol = formula[index:index+1]
