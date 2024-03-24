@@ -190,12 +190,19 @@ def compute_molar_mass(symbol_quantity_list, periodic_table_dict):
     1.00794 * 2 + 15.9994 * 1
     18.01528
     """
-    # Do the following for each inner list in the
-    # compound symbol_quantity_list:
+
+    total_mass = 0
+            
+    for element in symbol_quantity_list:
         # Separate the inner list into symbol and quantity.
+        symbol = element[SYMBOL_INDEX]
+        quantity = element[QUANTITY_INDEX]
         # Get the atomic mass for the symbol from the dictionary.
+        atomic_mass = periodic_table_dict[symbol][ATOMIC_MASS_INDEX]
         # Multiply the atomic mass by the quantity.
         # Add the product into the total molar mass.
+        total_mass += atomic_mass * quantity
+    return total_mass
 
     # Return the total molar mass.
     return
