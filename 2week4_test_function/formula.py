@@ -56,4 +56,6 @@ def parse_formula(formula, periodic_table_dict):
                 group_dict, index = parse_r(formula,index+1,level+1)
                 quant, index = parse_quant(formula, index)
                 for symbol in group_dict:
-                    
+                    prev = get_quant(elem_dict, symbol)
+                    curr = prev + group_dict[symbol] * quant
+                    elem_dict[symbol] = curr
