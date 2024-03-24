@@ -38,3 +38,5 @@ def parse_formula(formula, periodic_table_dict):
                     "instead of zero", formula, index)
             start = index
             index += 1
+            while index<len(formula) and formula[index].isdecimal():
+                
