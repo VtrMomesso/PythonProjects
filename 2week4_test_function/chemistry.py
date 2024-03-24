@@ -29,6 +29,7 @@ def main():
 
     # Call the compute_molar_mass function to compute the
     # molar mass of the molecule from the compound list.
+    molar_mass = compute_molar_mass(symbol_quantity_list, periodic_table_dict)
    
 
 
