@@ -20,17 +20,17 @@ def main():
     periodic_table = make_periodic_table()
 
 
-    # Get chemical formula from user
+    # Get a chemical formula for a molecule from the user.
     chemical_formula = input("Enter the chemical formula of the molecule: ")
 
-    # Get mass of chemical sample in grams from user
-    mass = float(input("Enter the mass of the chemical sample in grams: "))
+    # Get the mass of a chemical sample in grams from the user.
+    mass_grams = float(input("Enter the mass in grams of the sample: "))
 
     # Check if there is the values that the user asked for.
-    if chemical_formula and mass in periodic_table[chemical_formula, mass]:
+    if chemical_formula and mass_grams in periodic_table[chemical_formula, mass_grams]:
 
         # Find the required values and keep in the variable.
-        values = periodic_table[chemical_formula, mass]
+        values = periodic_table[chemical_formula, mass_grams]
 
         # organized the values that it will show to the user.
         name = values[NAME_INDEX] 
@@ -46,7 +46,7 @@ def main():
         print(name)
 
     else:
-        print(f"The {chemical_formula} and {mass} aren't on dictionary.")
+        print(f"The {chemical_formula} and {mass_grams} aren't on dictionary.")
         
 
 
@@ -60,7 +60,7 @@ def make_periodic_table():
         
     Return: compound_list"""
 
-    periodic_table_list = {
+    periodic_table_dict = {
     # symbol: 	[name,	atomic_mass]
         "Ac":	["Actinium",	227],
         "Ag":	["Silver",	107.8682],
@@ -158,7 +158,7 @@ def make_periodic_table():
         "Zr":	["Zirconium",	91.224]
     }
 
-    return periodic_table_list
+    return {element[SYMBOL_INDEX]: [element[NAME_INDEX], element[ATOMIC_MASS_INDEX]] for element in periodic_table_dict}
 
 
 # Indexes for inner lists in the periodic table
@@ -210,3 +210,5 @@ def compute_molar_mass(symbol_quantity_list, periodic_table_dict):
 
 if __name__ == "__name__":
     main()
+
+
