@@ -26,8 +26,10 @@ def main():
     # list that stores element symbols and the quantity
     # of atoms of each element in the molecule.
     symbol_quantity_list = parse_formula(chemical_formula)
-    
-        
+
+    # Call the compute_molar_mass function to compute the
+    # molar mass of the molecule from the compound list.
+   
 
 
 def make_periodic_table():
