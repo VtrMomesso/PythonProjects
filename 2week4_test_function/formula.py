@@ -47,3 +47,7 @@ def parse_formula(formula, periodic_table_dict):
         return 0 if symbol not in elem_dict else elem_dict[symbol]
     
     def parse_r(formula, index, level):
+        start_index = index
+        start_level = level
+        elem_dict = {}
+        
