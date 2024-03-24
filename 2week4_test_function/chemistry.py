@@ -25,7 +25,7 @@ def main():
     # chemical formula given by the user to a compound
     # list that stores element symbols and the quantity
     # of atoms of each element in the molecule.
-    symbol_quantity_list = parse_formula(chemical_formula)
+    symbol_quantity_list = parse_formula(chemical_formula, periodic_table_dict)
 
     # Call the compute_molar_mass function to compute the
     # molar mass of the molecule from the compound list.
@@ -35,7 +35,7 @@ def main():
     moles = mass_grams / molar_mass
 
     # Print the molar mass.
-    print(f"The molar mass of the molecule is: {molar_mass} g/mol")
+    print(f"The molar mass of the molecule is: {molar_mass} grams/mol")
 
     # Print the number of moles.
     print(f"The number of moles in the sample is: {moles} moles")
