@@ -210,7 +210,13 @@ def sum_protons(symbol_quantity_list, periodic_table_dict):
     Return: the total number of protons of all
         the elements in symbol_quantity_list.
     """
-
+    total_protons = 0
+    for element in symbol_quantity_list:
+        symbol = element[0]
+        quantity = element[1]
+        atomic_number = periodic_table_dict[symbol][2]
+        total_protons += atomic_number * quantity
+    return total_protons
 
 
 if __name__ == "__main__":
