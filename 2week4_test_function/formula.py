@@ -19,3 +19,8 @@ def parse_formula(formula, periodic_table_dict):
     Return: a compound list that contains chemical symbol and
         quantities like  this [["Fe", 2], ["O", 3]]
     """
+
+    assert isinstance(formula, str), \
+        "wrong data type for parameter formula; " \
+        f"formula is a {type(formula)} but must be a string"
+    
