@@ -87,3 +87,7 @@ def parse_formula(formula, periodic_table_dict):
                     # Decimal digit not preceded by an
                     # element symbol or close parenthesis
                     message = "invalid formula"
+                else:
+                    # Illegal character: [^()0-9a-zA-Z]
+                    message = "invalid formula; " + \
+                        f"illegal character: {ch}"
