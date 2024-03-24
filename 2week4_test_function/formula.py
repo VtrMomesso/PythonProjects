@@ -74,3 +74,5 @@ def parse_formula(formula, periodic_table_dict):
                 quant, index = parse_quant(formula, index)
                 prev = get_quant(elem_dict, symbol)
                 elem_dict[symbol] = prev + quant
+            elif ch == ")":
+                if level == 0:
