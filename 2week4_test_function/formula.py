@@ -82,4 +82,8 @@ def parse_formula(formula, periodic_table_dict):
                 level -= 1
                 index += 1
                 break
-            
+            else:
+                if ch.isdecimal():
+                    # Decimal digit not preceded by an
+                    # element symbol or close parenthesis
+                    message = "invalid formula"
