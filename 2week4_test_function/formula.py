@@ -96,3 +96,10 @@ def parse_formula(formula, periodic_table_dict):
             raise FormulaError("invalid formula; "
                 "unmatched open parenthesis",
                 formula, start_index - 1)
+        return elem_dict, index
+    
+    # Return the compound list of element symbols and
+    # quantities. Each element in the compound list
+    # will be a list in this form: ["symbol", quantity]
+    elem_dict, _ = parse_r(formula, 0, 0)
+    return list(elem_dict.items())
