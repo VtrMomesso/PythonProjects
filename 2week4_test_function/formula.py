@@ -76,3 +76,6 @@ def parse_formula(formula, periodic_table_dict):
                 elem_dict[symbol] = prev + quant
             elif ch == ")":
                 if level == 0:
+                    raise FormulaError("invalid formula; "
+                        "unmatched close parenthesis",
+                        formula, index)
