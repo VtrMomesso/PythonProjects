@@ -30,4 +30,6 @@ def parse_formula(formula, periodic_table_dict):
     
     def parse_quant(formula, index):
         quant = 1
-         if index < len(formula) and formula[index].isdecimal():
+        if index < len(formula) and formula[index].isdecimal():
+            if formula[index] == "0":
+                
