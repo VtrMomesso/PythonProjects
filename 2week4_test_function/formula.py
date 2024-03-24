@@ -32,4 +32,7 @@ def parse_formula(formula, periodic_table_dict):
         quant = 1
         if index < len(formula) and formula[index].isdecimal():
             if formula[index] == "0":
-                
+                raise FormulaError("invalid formula, "
+                    "quantity begins with zero (0), perhaps "
+                    "you meant to type capital O for Oxygen "
+                    "instead of zero", formula, index)
