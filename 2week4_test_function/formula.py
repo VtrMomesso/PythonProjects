@@ -45,3 +45,5 @@ def parse_formula(formula, periodic_table_dict):
     
     def get_quant(elem_dict, symbol):
         return 0 if symbol not in elem_dict else elem_dict[symbol]
+    
+    def parse_r(formula, index, level):
