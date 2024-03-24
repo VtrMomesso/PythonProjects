@@ -28,4 +28,5 @@ def parse_formula(formula, periodic_table_dict):
         f"periodic_table_dict is a {type(periodic_table_dict)} " \
         "but must be a dictionary"
     
-     
+    def parse_quant(formula, index):
+        quant = 1
