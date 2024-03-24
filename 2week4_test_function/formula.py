@@ -91,3 +91,5 @@ def parse_formula(formula, periodic_table_dict):
                     # Illegal character: [^()0-9a-zA-Z]
                     message = "invalid formula; " + \
                         f"illegal character: {ch}"
+                raise FormulaError(message, formula, index)
+            
