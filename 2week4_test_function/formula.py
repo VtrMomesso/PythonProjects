@@ -39,4 +39,4 @@ def parse_formula(formula, periodic_table_dict):
             start = index
             index += 1
             while index<len(formula) and formula[index].isdecimal():
-                
+                index += 1
