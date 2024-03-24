@@ -51,3 +51,4 @@ def parse_formula(formula, periodic_table_dict):
         start_level = level
         elem_dict = {}
         while index < len(formula):
+            ch = formula[index]
