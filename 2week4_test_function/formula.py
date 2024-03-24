@@ -79,3 +79,7 @@ def parse_formula(formula, periodic_table_dict):
                     raise FormulaError("invalid formula; "
                         "unmatched close parenthesis",
                         formula, index)
+                level -= 1
+                index += 1
+                break
+            
