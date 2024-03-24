@@ -27,6 +27,10 @@ def main():
     # of atoms of each element in the molecule.
     symbol_quantity_list = parse_formula(chemical_formula, periodic_table_dict)
 
+    # Call the sum_protons function to compute the total number of protons.
+    total_protons = sum_protons(symbol_quantity_list, periodic_table_dict)
+
+
     # Call the compute_molar_mass function to compute the
     # molar mass of the molecule from the compound list.
     molar_mass = compute_molar_mass(symbol_quantity_list, periodic_table_dict)
@@ -39,7 +43,12 @@ def main():
 
     # Print the number of moles.
     print(f"The number of moles in the sample is: {moles} moles")
+
+    # Print the total number of protons.
+    print(f"The total number of protons in the molecule is: {total_protons}")
     print()
+
+
 
 def make_periodic_table():
     """ This function named make_periodic_table is a 
