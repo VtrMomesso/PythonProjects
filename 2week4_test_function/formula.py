@@ -93,4 +93,6 @@ def parse_formula(formula, periodic_table_dict):
                         f"illegal character: {ch}"
                 raise FormulaError(message, formula, index)
         if level > 0 and level >= start_level:
-            
+            raise FormulaError("invalid formula; "
+                "unmatched open parenthesis",
+                formula, start_index - 1)
