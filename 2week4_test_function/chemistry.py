@@ -149,7 +149,7 @@ def make_periodic_table():
         "Zr":	["Zirconium",	91.224]
     }
 
-    return {element[SYMBOL_INDEX]: [element[NAME_INDEX], element[ATOMIC_MASS_INDEX]] for element in periodic_table_dict}
+    return periodic_table_dict
 
 
 # Indexes for inner lists in the periodic table
@@ -199,7 +199,7 @@ def compute_molar_mass(symbol_quantity_list, periodic_table_dict):
     return
 
 
-if __name__ == "__name__":
+if __name__ == "__main__":
     main()
 
 
