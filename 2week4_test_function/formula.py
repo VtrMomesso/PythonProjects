@@ -67,3 +67,7 @@ def parse_formula(formula, periodic_table_dict):
                     symbol = formula[index:index+1]
                     if symbol in periodic_table_dict:
                         index += 1
+                    else:
+                        raise FormulaError("invalid formula; "
+                            f"unknown element symbol: {symbol}",
+                            formula, index)
