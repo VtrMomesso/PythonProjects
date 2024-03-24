@@ -92,4 +92,5 @@ def parse_formula(formula, periodic_table_dict):
                     message = "invalid formula; " + \
                         f"illegal character: {ch}"
                 raise FormulaError(message, formula, index)
+        if level > 0 and level >= start_level:
             
