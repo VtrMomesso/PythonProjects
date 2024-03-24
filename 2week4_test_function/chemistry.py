@@ -6,6 +6,9 @@ and make_periodic_table function that works as an dictionary and bring
 the periodic table elementes and the main functions find an especific 
 elemente and show to the user. """
 
+from formula import parse_formula
+
+
 def main():
 
 
