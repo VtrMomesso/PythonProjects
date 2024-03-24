@@ -61,3 +61,5 @@ def parse_formula(formula, periodic_table_dict):
                     elem_dict[symbol] = curr
             elif ch.isalpha():
                 symbol = formula[index:index+2]
+                if symbol in periodic_table_dict:
+                    index += 2
