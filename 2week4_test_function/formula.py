@@ -52,3 +52,6 @@ def parse_formula(formula, periodic_table_dict):
         elem_dict = {}
         while index < len(formula):
             ch = formula[index]
+            if ch == "(":
+                group_dict, index = parse_r(formula,index+1,level+1)
+                
