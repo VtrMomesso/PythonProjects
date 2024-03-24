@@ -44,4 +44,4 @@ def parse_formula(formula, periodic_table_dict):
         return quant, index
     
     def get_quant(elem_dict, symbol):
-        
+        return 0 if symbol not in elem_dict else elem_dict[symbol]
