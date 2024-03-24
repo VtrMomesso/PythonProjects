@@ -21,28 +21,12 @@ def main():
     # store the returned list in a variable.
     periodic_table_dict = make_periodic_table()
 
-
-    # Check if there is the values that the user asked for.
-    if chemical_formula and mass_grams in periodic_table_dict[chemical_formula, mass_grams]:
-
-        # Find the required values and keep in the variable.
-        values = periodic_table_dict[chemical_formula, mass_grams]
-
-        # organized the values that it will show to the user.
-        name = values[NAME_INDEX] 
-        atomic_mass = values[ATOMIC_MASS_INDEX]
+    # Call the parse_formula function to convert the
+    # chemical formula given by the user to a compound
+    # list that stores element symbols and the quantity
+    # of atoms of each element in the molecule.
+    symbol_quantity_list = parse_formula(chemical_formula)
     
-        # Print the name and atomic mass for each chemical element on 
-        # a separate line 
-        print("Chemical elements in the periodic table:")
-        print(f"Name: {name} - Atomic Mass: {atomic_mass}")
-
-        for i in periodic_table_dict:
-            name = i[NAME_INDEX]
-        print(name)
-
-    else:
-        print(f"The {chemical_formula} and {mass_grams} aren't on dictionary.")
         
 
 
