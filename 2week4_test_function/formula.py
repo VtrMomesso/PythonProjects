@@ -36,3 +36,5 @@ def parse_formula(formula, periodic_table_dict):
                     "quantity begins with zero (0), perhaps "
                     "you meant to type capital O for Oxygen "
                     "instead of zero", formula, index)
+            start = index
+            index += 1
