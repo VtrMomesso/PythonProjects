@@ -34,6 +34,10 @@ def main():
     # Compute the number of moles in the sample.
     moles = mass_grams / molar_mass
 
+    # Print the molar mass.
+    print(f"The molar mass of the molecule is: {molar_mass} g/mol")
+
+
    
 
 
