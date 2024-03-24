@@ -23,4 +23,7 @@ def parse_formula(formula, periodic_table_dict):
     assert isinstance(formula, str), \
         "wrong data type for parameter formula; " \
         f"formula is a {type(formula)} but must be a string"
-    
+    assert isinstance(periodic_table_dict, dict), \
+        "wrong data type for parameter periodic_table_dict; " \
+        f"periodic_table_dict is a {type(periodic_table_dict)} " \
+        "but must be a dictionary"
