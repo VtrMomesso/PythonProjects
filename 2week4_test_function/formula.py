@@ -71,3 +71,6 @@ def parse_formula(formula, periodic_table_dict):
                         raise FormulaError("invalid formula; "
                             f"unknown element symbol: {symbol}",
                             formula, index)
+                quant, index = parse_quant(formula, index)
+                prev = get_quant(elem_dict, symbol)
+                elem_dict[symbol] = prev + quant
