@@ -3,7 +3,9 @@
 
 
 def main():
-
+    """Read the contents of a text file named
+    provinces.txt into a list named provinces_list.
+    """
     provinces_list = read_list("provinces.txt")
 
     print(provinces_list)
@@ -28,6 +30,14 @@ def main():
     print(f"Alberta occurs {count} times in the modified list")
 
 
+def read_list(filename):
+    """Read the contents of a text file into a list
+    and return the list that contains the lines of text.
+
+    Parameter filename: the name of the text file to read
+    Return: a list of strings
+    """
+    
 
 if __name__ == "__main__":
     main()
