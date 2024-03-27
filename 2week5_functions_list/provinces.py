@@ -26,3 +26,8 @@ def main():
 
     print()
     print(f"Alberta occurs {count} times in the modified list")
+
+
+
+if __name__ == "__main__":
+    main()
