@@ -56,8 +56,12 @@ def read_list(filename):
             # Append the clean line of text
             # onto the end of the list.
             text_list.append(clean_line)
-             
+
+    # Return the list that contains the lines of the text.
+    return text_list    
 
 
+# This call the main functions. However, if this file
+# was simply imported, then skip the call to main.
 if __name__ == "__main__":
     main()
