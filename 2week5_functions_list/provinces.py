@@ -20,3 +20,9 @@ def main():
         if provinces_list[i] == "AB":
             provinces_list[i] = "Alberta"
     print(provinces_list)
+
+
+    count = provinces_list.count("Alberta")
+
+    print()
+    print(f"Alberta occurs {count} times in the modified list")
