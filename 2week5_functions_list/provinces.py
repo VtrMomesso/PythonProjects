@@ -37,7 +37,13 @@ def read_list(filename):
     Parameter filename: the name of the text file to read
     Return: a list of strings
     """
+
+    # Creat an empty list that will store 
+    # the lines of text from the text file.
+    text_list = []
+
     
+
 
 if __name__ == "__main__":
     main()
