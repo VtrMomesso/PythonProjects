@@ -12,3 +12,7 @@ def read_dictionary(filename, key_column_index):
     Return: a compound dictionary that contains
         the contents of the CSV file.
     """
+
+def main():
+    products_dict = read_dictionary("products.csv")
+    print(products_dict)
