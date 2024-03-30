@@ -16,3 +16,6 @@ def read_dictionary(filename, key_column_index):
 def main():
     products_dict = read_dictionary("products.csv")
     print(products_dict)
+
+if __name__ == "__main__":
+    main()
