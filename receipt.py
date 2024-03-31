@@ -17,7 +17,7 @@ def read_dictionary(filename, key_column_index):
     Return: a compound dictionary that contains
         the contents of the CSV file.
     """
-    compound_dict= {
+    compound_dict = {
         #[Product_code, Name, Price]
     }
     try:
@@ -83,10 +83,19 @@ def main():
             # Sales tax
             sales_tax_rate = 0.06
             sales_tax = subtotal * sales_tax_rate
-            print(f"Sales Tax (6%): ${sales_tax}")
+            print(f"Sales Tax (6%): ${sales_tax:.2f}")
 
-            
-            
+            # Total due
+            total_due = subtotal + sales_tax
+            print(f"Total Amount Due: ${total_due:.2f}")
+
+            # Thank you message
+            print("\nThank you for shopping with us!")
+
+            # Current date and time
+            current_datetime = datetime.now()
+            print(f"Date and Time: {current_datetime}")
+
     except: FileNotFoundError:
         print("Error: File not found.")
     except: PermissionError:
