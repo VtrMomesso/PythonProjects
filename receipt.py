@@ -1,5 +1,10 @@
+# by Victor dos Santos
+
+# this function programs helps us to read a list and show it.
 
 import csv
+from datetime import datetime
+
 
 def read_dictionary(filename, key_column_index):
     """Read the contents of a CSV file into a compound
