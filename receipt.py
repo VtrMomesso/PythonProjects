@@ -27,6 +27,7 @@ def read_dictionary(filename, key_column_index):
 
 def main():
     products_dict = read_dictionary("products.csv", 0)
+    
     print(products_dict)
 
     with open("request.csv", "r", newline="") as file:
