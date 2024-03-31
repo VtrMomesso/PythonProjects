@@ -48,10 +48,17 @@ def main():
             # Store name
             print("Story Name: Your Store Name")
             print("\nOrdered Items:")
+            total_items = 0
+            subtotal = 0
 
+            # Dividing each rows in your respective values.
             for row in reader:
+                # atribuition to the first element in the row
                 product_numbr = row[0]
+                # atribuition to the second element in the row 
                 quantity = int(row[1])
+
+                # Seeing if there are items in the products_dict 
                 if product_numbr in products_dict:
                     product_info = products_dict[product_numbr]
                     product_name = product_info[1]
