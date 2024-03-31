@@ -1,4 +1,11 @@
+
+# test functions with porpuse to test the receipt.py
+
+
 # Copyright 2020, Brigham Young University-Idaho. All rights reserved.
+
+
+
 
 from receipt import read_dictionary
 from os import path
