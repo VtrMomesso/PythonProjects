@@ -1,7 +1,7 @@
 # by Victor dos Santos
 
 # this function programs helps us to read a list and show it.
-
+#import the the funcionality to read csv documents and datetime.
 import csv
 from datetime import datetime
 
@@ -18,15 +18,18 @@ def read_dictionary(filename, key_column_index):
         the contents of the CSV file.
     """
     compound_dict = {}
+    try:
+        with open(filename, "rt", newline="") as file:
+            reader = csv.reader(file)
+            next(reader)
 
-    with open(filename, "rt", newline="") as file:
-        reader = csv.reader(file)
-        next(reader)
-
-        for row in reader:
-            key = row[key_column_index]
-            compound_dict[key] = row
-
+            for row in reader:
+                key = row[key_column_index]
+                compound_dict[key] = row
+    except FileNotFoundError:
+        print(f"Error: File '{filename}' not found.")
+    except PermissionError:
+        print(f"Error: Permission denied to access '{filename}'.")
     return compound_dict
 
 
