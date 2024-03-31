@@ -31,8 +31,12 @@ def main():
 
     with open("request.csv", "r", newline="") as file:
 
-    reader = csv.reader(file)
-    
+        reader = csv.reader(file)
+        next(reader)
+
+        for row in reader:
+            
+             
     
     
 
