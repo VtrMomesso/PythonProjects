@@ -34,29 +34,33 @@ def read_dictionary(filename, key_column_index):
 
 
 def main():
-    products_dict = read_dictionary("products.csv", 0)
-    
-    print(products_dict)
+    try:
+        products_dict = read_dictionary("products.csv", 0)
+        
+        print(products_dict)
 
-    with open("request.csv", "r", newline="") as file:
+        with open("request.csv", "r", newline="") as file:
 
-        reader = csv.reader(file)
-        next(reader)
+            reader = csv.reader(file)
+            next(reader)
 
-        for row in reader:
-            product_numbr = row[0]
-            quantity = int(row[1])
-            if product_numbr in products_dict:
-                product_info = products_dict[product_numbr]
-                product_name = product_info[1]
-                product_price = float(product_info[2])
-                total_price = quantity * product_price
+            for row in reader:
+                product_numbr = row[0]
+                quantity = int(row[1])
+                if product_numbr in products_dict:
+                    product_info = products_dict[product_numbr]
+                    product_name = product_info[1]
+                    product_price = float(product_info[2])
+                    total_price = quantity * product_price
 
-                print(f"Product: {product_name}, Quantity: {quantity}, Price: ${total_price:.2f}")
+                    print(f"Product: {product_name}, Quantity: {quantity}, Price: ${total_price:.2f}")
 
-             
-    
-    
+    except: FileNotFoundError:
+        print("Error: File not found.")
+    except: PermissionError:
+        print("Error: Permission denied.")
+    except: KeyError as e:
+        print(f"Error: {e} is not found int the dictionary.")
 
 
 if __name__ == "__main__":
