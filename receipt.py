@@ -35,14 +35,19 @@ def read_dictionary(filename, key_column_index):
 
 def main():
     try:
+        # Step 1: Read products.csv into a compound dictionary
         products_dict = read_dictionary("products.csv", 0)
-        
+        print("Products Dictionary: ")
         print(products_dict)
 
+        # Step 2: Open request.csv and process each row
         with open("request.csv", "r", newline="") as file:
-
             reader = csv.reader(file)
-            next(reader)
+            next(reader) # Skip the header
+
+            # Store name
+            print("Story Name: Your Store Name")
+            print("\nOrdered Items:")
 
             for row in reader:
                 product_numbr = row[0]
