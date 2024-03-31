@@ -96,11 +96,11 @@ def main():
             current_datetime = datetime.now()
             print(f"Date and Time: {current_datetime}")
 
-    except: FileNotFoundError:
+    except FileNotFoundError:
         print("Error: File not found.")
-    except: PermissionError:
+    except PermissionError:
         print("Error: Permission denied.")
-    except: KeyError as e:
+    except KeyError as e:
         print(f"Error: {e} is not found int the dictionary.")
 
 
