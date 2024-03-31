@@ -35,7 +35,10 @@ def main():
         next(reader)
 
         for row in reader:
-            
+            product_numbr = row[0]
+            quantity = int(row[1])
+            if product_numbr in products_dict:
+                
              
     
     
