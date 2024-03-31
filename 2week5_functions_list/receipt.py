@@ -38,7 +38,13 @@ def main():
             product_numbr = row[0]
             quantity = int(row[1])
             if product_numbr in products_dict:
-                
+                product_info = products_dict[product_numbr]
+                product_name = product_info[1]
+                product_price = float(product_info[2])
+                total_price = quantity * product_price
+
+                print(f"Product: {product_name}, Quantity: {quantity}, Price: ${total_price:.2f}")
+
              
     
     
