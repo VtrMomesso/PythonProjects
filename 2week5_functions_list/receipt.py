@@ -1,5 +1,5 @@
 
-
+import csv
 
 def read_dictionary(filename, key_column_index):
     """Read the contents of a CSV file into a compound
@@ -12,10 +12,22 @@ def read_dictionary(filename, key_column_index):
     Return: a compound dictionary that contains
         the contents of the CSV file.
     """
+    compound_dict = {}
+
+    with open(filename, "rt", newline="") as file:
+        reader = csv.reader(file)
+        next(reader)
+
+        for row in reader:
+            key = row[key_column_index]
+            compound_dict[key] = row
+
+    return compound_dict
+
 
 def main():
-    products_dict = read_dictionary("products.csv")
-    print(products_dict)
+    
+    
 
 
 
