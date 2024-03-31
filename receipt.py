@@ -17,7 +17,9 @@ def read_dictionary(filename, key_column_index):
     Return: a compound dictionary that contains
         the contents of the CSV file.
     """
-    compound_dict = {}
+    compound_dict= {
+        #[Product_code, Name, Price]
+    }
     try:
         with open(filename, "rt", newline="") as file:
             reader = csv.reader(file)
@@ -37,6 +39,7 @@ def main():
     try:
         # Step 1: Read products.csv into a compound dictionary
         products_dict = read_dictionary("products.csv", 0)
+        
         print("Products Dictionary: ")
         print(products_dict)
 
@@ -67,11 +70,18 @@ def main():
                     product_price = float(product_info[2])
                     # Making a calculations
                     total_price = quantity * product_price
-
+                    #printing the informations of the list
                     print(f"Product: {product_name}, Quantity: {quantity}, Price: ${total_price:.2f}")
                     total_items += quantity
                     subtotal += total_price
+            
 
+            # Subtotal
+            print(f"\nTotal Number of Items: {total_items}")
+            print(f"Subtotal: ${subtotal:.2f}")
+
+            
+            
     except: FileNotFoundError:
         print("Error: File not found.")
     except: PermissionError:
