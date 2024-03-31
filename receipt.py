@@ -80,6 +80,11 @@ def main():
             print(f"\nTotal Number of Items: {total_items}")
             print(f"Subtotal: ${subtotal:.2f}")
 
+            # Sales tax
+            sales_tax_rate = 0.06
+            sales_tax = subtotal * sales_tax_rate
+            print(f"Sales Tax (6%): ${sales_tax}")
+
             
             
     except: FileNotFoundError:
