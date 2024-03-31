@@ -60,12 +60,17 @@ def main():
 
                 # Seeing if there are items in the products_dict 
                 if product_numbr in products_dict:
+
                     product_info = products_dict[product_numbr]
+                    # Atribuition from the second and thrid items from the list.
                     product_name = product_info[1]
                     product_price = float(product_info[2])
+                    # Making a calculations
                     total_price = quantity * product_price
 
                     print(f"Product: {product_name}, Quantity: {quantity}, Price: ${total_price:.2f}")
+                    total_items += quantity
+                    subtotal += total_price
 
     except: FileNotFoundError:
         print("Error: File not found.")
